@@ -646,7 +646,7 @@ nav.detached {
 /* ---------- CAROUSEL -------------------------------------------------- */
 
 	.carousel .carousel-inner, .carousel .item {
-		height: 650px;
+		height: 600px;
 	}
 	
 	.carousel-caption {
