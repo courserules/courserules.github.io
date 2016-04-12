@@ -129,7 +129,7 @@ nav {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   font-weight:600;
-  color: #222222;
+  color: #fff;
   background-color: transparent;
 }
 
