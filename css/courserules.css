@@ -115,13 +115,13 @@ nav {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #555555;
+  color: #f7f7f7;
 }
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
   font-weight:500;
-  color: #444444;
+  color: #fafafa;
   background-color: none;
 }
 
