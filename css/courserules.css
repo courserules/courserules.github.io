@@ -18,14 +18,14 @@ html,body {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #5b0099;
-  border-color: #4c0080;
+  background-color: #09426F;
+  border-color: #09426F;
 }
 
 .btn-default {
   color: #ffffff;
-  background-color: #474949;
-  border-color: #474949;
+  background-color: #074976;
+  border-color: #09426F;
 }
 
 .btn-large {
