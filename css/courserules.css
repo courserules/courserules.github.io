@@ -46,8 +46,8 @@ html,body {
 }
 
 .navbar-background {
-	background: rgba(7,96,156);
-	background: rgba(7,96,156,0.8);
+	background: rgba(7,73,118);
+	background: rgba(7,73,118,0.8);
 }
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
