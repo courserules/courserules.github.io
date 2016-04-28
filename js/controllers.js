@@ -1,4 +1,7 @@
-var myApp = angular.module('myApp', ['uiGmapgoogle-maps']);
+var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateProvider) {
+  $interpolateProvider.startSymbol('[[');
+  $interpolateProvider.endSymbol(']]');
+});
 
 myApp.factory("Markers", function(){
   var Markers = [
@@ -15,11 +18,11 @@ myApp.factory("Markers", function(){
     {
       "id": "1",
       "coords": {
-        "latitude": "40.7903",
-        "longitude": "-73.9597"
+        "latitude": "27.6348",
+        "longitude": "-97.2597"
       },
       "window" : {
-        "title": "Manhattan New York, NY"
+        "title": "No where"
       }
     }
   ];
