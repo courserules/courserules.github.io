@@ -5,8 +5,8 @@ myApp.factory("Markers", function(){
     {
       "id": "0",
       "coords": {
-        "latitude": "27.6318",
-        "longitude": "-97.2338"
+        "latitude": "27.6348",
+        "longitude": "-97.2398"
       },
       "window": {
         "title": "High Bridge"
