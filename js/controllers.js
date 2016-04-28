@@ -28,7 +28,7 @@ myApp.factory("Markers", function(){
 
 myApp.controller("gMap",function($scope,Markers){
   $scope.map = { 
-    center: { latitude: 39.8282, longitude: -98.5795 }, 
+    center: { latitude: 27.6932, longitude: -97.2805 }, 
     zoom: 4 
   };
   $scope.markers = Markers;
