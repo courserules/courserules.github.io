@@ -5,11 +5,11 @@ myApp.factory("Markers", function(){
     {
       "id": "0",
       "coords": {
-        "latitude": "45.5200",
-        "longitude": "-122.6819"
+        "latitude": "27.6318",
+        "longitude": "-97.2338"
       },
       "window": {
-        "title": "Portland, OR"
+        "title": "High Bridge"
       }
     },
     {
