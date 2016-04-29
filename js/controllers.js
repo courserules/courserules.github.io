@@ -99,17 +99,219 @@ myApp.factory("Markers", function(){
 	return Markers;
 });
 
-myApp.controller("gMap",function($scope, Markers, Polylines){
+myApp.factory("Options", function(){
+	var Options = {
+		styles: [
+		{
+			"featureType": "poi",
+			"elementType": "all",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "poi",
+			"elementType": "all",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "administrative",
+			"elementType": "all",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": 0
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"hue": "#ffffff"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "road.local",
+			"elementType": "all",
+			"stylers": [
+				{
+					"hue": "#ffffff"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 100
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"hue": "#ffffff"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 100
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": 0
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"hue": "#bbbbbb"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 26
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"hue": "#dddddd"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": -3
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		}
+	]};
+	return Options;
+});
+
+myApp.controller("gMap",function($scope, Markers, Polylines, Options){
   // Add map to scope
   $scope.map = { 
     center: { latitude: 27.6932, longitude: -97.2805 }, 
     zoom: 12,
-  };
-  
-  var styleArray = [{"featureType":"poi","elementType":"all","stylers":[{"hue":"#000000"},{"saturation":-100},{"lightness":-100},{"visibility":"off"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#000000"},{"saturation":-100},{"lightness":-100},{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"hue":"#000000"},{"saturation":0},{"lightness":-100},{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"hue":"#000000"},{"saturation":-100},{"lightness":-100},{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"on"}]},{"featureType":"transit","elementType":"labels","stylers":[{"hue":"#000000"},{"saturation":0},{"lightness":-100},{"visibility":"off"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"hue":"#000000"},{"saturation":-100},{"lightness":-100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbbbbb"},{"saturation":-100},{"lightness":26},{"visibility":"on"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"hue":"#dddddd"},{"saturation":-100},{"lightness":-3},{"visibility":"on"}]}];
-  $scope.options = {
-   styles: styleArray
-  };
+  };  
+  // Add options to scope
+  $scope.options = Options;
   // Add markers to scope
   $scope.markers = Markers;
   // Add polylines to scope
