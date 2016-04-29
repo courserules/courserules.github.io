@@ -65,7 +65,7 @@ myApp.factory("Polylines", function(){
 					latitude: 28.7354,
 					longitude: -97.6434
 				},
-				// Keyboard Fields
+				// Initial 11 (Keyboard Fields)
 				{
 					latitude: 28.6449,
 					longitude: -97.7022
@@ -91,11 +91,41 @@ myApp.factory("Polylines", function(){
 			}]
         },
         
-        // KNGT 17
+        // KNGT 29
         {
 			id: 3,
 			path: [
-				// Bridge
+				// Initial 29
+				{
+					latitude: 28.5947,
+					longitude: -97.5093
+				},
+				// 29 Departure End
+				{
+					latitude: 28.6115,
+					longitude: -97.5907
+				}
+			],
+			stroke: {
+				color: '#6060FB',
+				weight: 3
+			},
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
+        
+        // KNGT 17
+        {
+			id: 4,
+			path: [
+				// Initial 17
 				{
 					latitude: 28.7354,
 					longitude: -97.6434
@@ -119,7 +149,9 @@ myApp.factory("Polylines", function(){
 				offset: '25px',
 				repeat: '50px'
 			}]
-        }
+        },
+        
+        // KNGT 29
 	];
 
   return Polylines
