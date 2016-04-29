@@ -7,3 +7,6 @@ Notes on development:
 * http://codepen.io/joe-watkins/pen/wBaOMq
 * https://jesse.codes/blog/Jekyll-Angular/
 * http://www.noxidsoft.com/development/using-jekyll-and-angularjs-together/
+* https://snazzymaps.com/style/55/subtle-greyscale-map
+* http://stackoverflow.com/questions/18432443/google-map-style-airport-runway
+* http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html

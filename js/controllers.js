@@ -31,6 +31,11 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.0937,
 					longitude: -97.2578
+				},
+				// Y-Intersection
+				{
+					latitude: 28.6648,
+					longitude: -97.4172
 				}
 			],
 			stroke: {
@@ -77,6 +82,7 @@ myApp.factory("Polylines", function(){
 // **************************************************************
 myApp.factory("Markers", function(){
 	var Markers = [
+		// High Bridge
 		{
 		  "id": "0",
 		  "coords": {
@@ -87,6 +93,7 @@ myApp.factory("Markers", function(){
 			"title": "High Bridge"
 		  }
 		},
+		// Aluminum Plant
 		{
 		  "id": "1",
 		  "coords": {
