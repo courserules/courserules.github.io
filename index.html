@@ -32,7 +32,7 @@ layout: default
     </div><!-- /.carousel -->
 
 <div ng-app="myApp" ng-controller="gMap">
-  <ui-gmap-google-map center='map.center' zoom='map.zoom' aria-label="Google map">
+  <ui-gmap-google-map center='map.center' zoom='map.zoom' aria-label="Google map" options="options">
     <ui-gmap-marker ng-repeat="marker in markers"
       coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
       <ui-gmap-window>
