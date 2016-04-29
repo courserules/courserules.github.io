@@ -3,8 +3,9 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
   $interpolateProvider.endSymbol(']]');
 });
 
-
-
+// **************************************************************
+// POLYLINES 
+// **************************************************************
 myApp.factory("Polylines", function(){
  	var Polylines = [
     	{
@@ -71,7 +72,9 @@ myApp.factory("Polylines", function(){
   return Polylines
 });
 
-
+// **************************************************************
+// MARKERS
+// **************************************************************
 myApp.factory("Markers", function(){
 	var Markers = [
 		{
@@ -98,8 +101,12 @@ myApp.factory("Markers", function(){
 	return Markers;
 });
 
+// **************************************************************
+// OPTIONS 
+// **************************************************************
 myApp.factory("Options", function(){
 	var Options = {
+		// Styles the map
 		styles: [
 		{
 			"featureType": "poi",
@@ -298,11 +305,30 @@ myApp.factory("Options", function(){
 					"visibility": "on"
 				}
 			]
-		}
+		},
+		// Controls coloration of airfields/airports
+		{
+			"featureType": "transit.station.airport",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"invert_lightness": true
+				},
+				{
+					"gamma": 3
+				},
+				{
+					"hue": "#ff7700"
+				}
+			]
+    	}
 	]};
 	return Options;
 });
 
+// **************************************************************
+// CONTROLLER 
+// **************************************************************
 myApp.controller("gMap",function($scope, Markers, Polylines, Options){
   // Add map to scope
   $scope.map = { 
