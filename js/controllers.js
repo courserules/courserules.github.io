@@ -30,7 +30,7 @@ myApp.factory("Polylines", function(){
 				// Bayside
 				{
 					latitude: 28.0937,
-					longitude: -97.2441
+					longitude: -97.2578
 				}
 			],
 			stroke: {
