@@ -18,11 +18,11 @@ myApp.factory("Markers", function(){
     {
       "id": "1",
       "coords": {
-        "latitude": "27.6348",
-        "longitude": "-97.2597"
+        "latitude": "27.8794",
+        "longitude": "-97.2578"
       },
       "window" : {
-        "title": "No where"
+        "title": "Aluminum Plant"
       }
     }
   ];
