@@ -89,7 +89,7 @@ myApp.factory("Polylines", function(){
 				offset: '25px',
 				repeat: '50px'
 			}]
-        }
+        },
         
         // KNGT 17
         {
