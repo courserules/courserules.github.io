@@ -36,16 +36,6 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.6648,
 					longitude: -97.4172
-				},
-				// Bridge
-				{
-					latitude: 28.7354,
-					longitude: -97.6434
-				},
-				// Keyboard Fields
-				{
-					latitude: 28.6449,
-					longitude: -97.7022
 				}
 			],
 			stroke: {
@@ -61,10 +51,24 @@ myApp.factory("Polylines", function(){
 					}]
             },
         {
-			// Mustang Departure
+			// KNGT 11
 			id: 2,
 			path: [
-			
+				// Bridge
+				{
+					latitude: 28.7354,
+					longitude: -97.6434
+				},
+				// Keyboard Fields
+				{
+					latitude: 28.6449,
+					longitude: -97.7022
+				},
+				// 11 Departure End
+				{
+					latitude: 28.6212,
+					longitude: -97.6227
+				}
 			],
 			stroke: {
 				color: '#6060FB',
@@ -75,9 +79,7 @@ myApp.factory("Polylines", function(){
 			geodesic: false,
 			visible: true,
 			icons: [{
-				icon: {
-					
-				},
+				icon: {},
 				offset: '25px',
 				repeat: '50px'
 			}]
