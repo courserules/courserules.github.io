@@ -6,8 +6,7 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
 
 
 myApp.factory("Polylines", function(){
- 	var Polylines =[]
-	Polylines = [
+ 	var Polylines = [
     	{
 			// KINGS 4
 			id: 1,
