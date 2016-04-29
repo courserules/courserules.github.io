@@ -41,6 +41,11 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.7354,
 					longitude: -97.6434
+				},
+				// Keyboard Fields
+				{
+					latitude: 28.6449,
+					longitude: -97.7022
 				}
 			],
 			stroke: {
