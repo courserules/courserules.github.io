@@ -8,8 +8,8 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
 // **************************************************************
 myApp.factory("Polylines", function(){
  	var Polylines = [
+    	// KINGS 4
     	{
-			// KINGS 4
 			id: 1,
 			path: [
 				// 13L Departure End
@@ -54,9 +54,10 @@ myApp.factory("Polylines", function(){
 			icons: [{
 				icon: {}
 					}]
-            },
+        },
+        
+        // KNGT 11
         {
-			// KNGT 11
 			id: 2,
 			path: [
 				// Bridge
@@ -73,6 +74,36 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.6212,
 					longitude: -97.6227
+				}
+			],
+			stroke: {
+				color: '#6060FB',
+				weight: 3
+			},
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        }
+        
+        // KNGT 17
+        {
+			id: 3,
+			path: [
+				// Bridge
+				{
+					latitude: 28.7354,
+					longitude: -97.6434
+				},
+				// 17 Departure End
+				{
+					latitude: 28.6216,
+					longitude: -97.6216
 				}
 			],
 			stroke: {
