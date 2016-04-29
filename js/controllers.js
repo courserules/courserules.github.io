@@ -36,6 +36,11 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.6648,
 					longitude: -97.4172
+				},
+				// Bridge
+				{
+					latitude: 28.7354,
+					longitude: -97.6434
 				}
 			],
 			stroke: {
