@@ -125,7 +125,7 @@ myApp.factory("Polylines", function(){
 			id: 4,
 			path: [
 				// Initial 17
-				points.Bridge,
+				points.bridge,
 				// 17 Departure End
 				{
 					latitude: 28.6216,
