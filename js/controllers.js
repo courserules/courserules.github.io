@@ -120,8 +120,8 @@ myApp.factory("Polylines", function(){
 			path: [
 				// Initial 29
 				{
-					latitude: 28.5910,
-					longitude: -97.5146
+					latitude: 28.5870,
+					longitude: -97.5156
 				},
 				// 29 Departure End
 				{
