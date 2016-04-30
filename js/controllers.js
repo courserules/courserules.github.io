@@ -8,10 +8,15 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
 // **************************************************************
 myApp.factory("Polylines", function(){
  	var points = {
+ 		"Y-Intersection": {
+ 			latitude: 28.6648,
+			longitude: -97.4172
+		},
  		"Bridge": {
  			latitude: 28.7354,
 			longitude: -97.6434
-		}}
+		}
+	};
 		
  	var Polylines = [
     	// KINGS 4
@@ -39,10 +44,7 @@ myApp.factory("Polylines", function(){
 					longitude: -97.2578
 				},
 				// Y-Intersection
-				{
-					latitude: 28.6648,
-					longitude: -97.4172
-				},
+				points.Y-Intersection,
 				// Bridge
 				points.Bridge
 			],
