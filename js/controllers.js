@@ -8,11 +8,15 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
 // **************************************************************
 myApp.factory("Polylines", function(){
  	var points = {
- 		"YIntersection": {
+ 		"abeamBayside": {
+ 			latitude: 28.0937,
+			longitude: -97.2578
+ 		},
+ 		"yIntersection": {
  			latitude: 28.6648,
 			longitude: -97.4172
 		},
- 		"Bridge": {
+ 		"bridge": {
  			latitude: 28.7354,
 			longitude: -97.6434
 		}
@@ -37,16 +41,10 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 27.8794,
 					longitude: -97.2578
-				},
-				// Abeam Bayside
-				{
-					latitude: 28.0937,
-					longitude: -97.2578
-				},
-				// Y-Intersection
-				points.YIntersection,
-				// Bridge
-				points.Bridge
+				}, 
+				points.abeamBayside,
+				points.yIntersection,
+				points.bridge
 			],
 			stroke: {
 				color: '#6060FB',
@@ -65,7 +63,6 @@ myApp.factory("Polylines", function(){
         {
 			id: 2,
 			path: [
-				// Bridge
 				points.Bridge,
 				// Initial 11 (Keyboard Fields)
 				{
