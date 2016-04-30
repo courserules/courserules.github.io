@@ -7,6 +7,12 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
 // POLYLINES 
 // **************************************************************
 myApp.factory("Polylines", function(){
+ 	var points = {
+ 		"Bridge": {
+ 			latitude: 28.7354,
+			longitude: -97.6434
+		}}
+		
  	var Polylines = [
     	// KINGS 4
     	{
@@ -38,10 +44,7 @@ myApp.factory("Polylines", function(){
 					longitude: -97.4172
 				},
 				// Bridge
-				{
-					latitude: 28.7354,
-					longitude: -97.6434
-				}
+				points.Bridge
 			],
 			stroke: {
 				color: '#6060FB',
@@ -61,10 +64,7 @@ myApp.factory("Polylines", function(){
 			id: 2,
 			path: [
 				// Bridge
-				{
-					latitude: 28.7354,
-					longitude: -97.6434
-				},
+				points.Bridge,
 				// Initial 11 (Keyboard Fields)
 				{
 					latitude: 28.6449,
@@ -126,10 +126,7 @@ myApp.factory("Polylines", function(){
 			id: 4,
 			path: [
 				// Initial 17
-				{
-					latitude: 28.7354,
-					longitude: -97.6434
-				},
+				points.Bridge,
 				// 17 Departure End
 				{
 					latitude: 28.6216,
