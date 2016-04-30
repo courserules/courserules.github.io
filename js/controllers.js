@@ -63,7 +63,7 @@ myApp.factory("Polylines", function(){
         {
 			id: 2,
 			path: [
-				points.Bridge,
+				points.bridge,
 				// Initial 11 (Keyboard Fields)
 				{
 					latitude: 28.6449,
