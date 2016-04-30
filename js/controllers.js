@@ -19,6 +19,10 @@ myApp.factory("Polylines", function(){
  		"bridge": {
  			latitude: 28.7354,
 			longitude: -97.6434
+		},
+		"berclair": {
+			latitude: 28.5439,
+			longitude: -97.5738
 		}
 	};
 		
@@ -59,9 +63,29 @@ myApp.factory("Polylines", function(){
 					}]
         },
         
-        // KNGT 11
+        // KNGT North Flow
         {
 			id: 2,
+			path: [
+				points.yIntersection,
+				points.berclair
+			],
+			stroke: {
+				color: '#6060FB',
+				weight: 3
+			},
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        },
+        
+        // KNGT 11
+        {
+			id: 3,
 			path: [
 				points.bridge,
 				// Initial 11 (Keyboard Fields)
@@ -92,7 +116,7 @@ myApp.factory("Polylines", function(){
         
         // KNGT 29
         {
-			id: 3,
+			id: 4,
 			path: [
 				// Initial 29
 				{
@@ -122,7 +146,7 @@ myApp.factory("Polylines", function(){
         
         // KNGT 17
         {
-			id: 4,
+			id: 5,
 			path: [
 				// Initial 17
 				points.bridge,
