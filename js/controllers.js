@@ -25,6 +25,11 @@ myApp.factory("Polylines", function(){
 			longitude: -97.5738
 		}
 	};
+	
+	var stroke = {
+				color: '#133453',
+				weight: 3
+			};
 		
  	var Polylines = [
     	// KINGS 4
@@ -50,10 +55,7 @@ myApp.factory("Polylines", function(){
 				points.yIntersection,
 				points.bridge
 			],
-			stroke: {
-				color: '#6060FB',
-				weight: 3
-			},
+			stroke: stroke,
 			editable: false,
 			draggable: false,
 			geodesic: false,
