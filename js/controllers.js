@@ -181,6 +181,11 @@ myApp.factory("Polylines", function(){
 			path: [
 				// Initial 35
 				points.berclair,
+				// 35 Extended
+				{
+					latitude: 28.5440,
+					longitude: -97.6072
+				},
 				// 35 Departure End
 				{
 					latitude: 28.5931,
