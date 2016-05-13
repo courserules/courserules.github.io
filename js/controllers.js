@@ -40,7 +40,7 @@ myApp.factory("Polylines", function(){
 				weight: 3
 			},
 			foxtrot: {
-				color: '#AA7039',
+				color: '#FF9F43',
 				weight: 3
 			} 
 		};
