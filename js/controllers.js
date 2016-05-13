@@ -26,7 +26,7 @@ myApp.factory("Polylines", function(){
 		},
 		"beachline": {
 			latitude: 27.6371,
-			longitude: --97.1877
+			longitude: -97.1877
 		}
 	};
 	
