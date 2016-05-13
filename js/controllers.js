@@ -25,8 +25,8 @@ myApp.factory("Polylines", function(){
 			longitude: -97.5738
 		},
 		"beachline": {
-			latitude: 27.6303,
-			longitude: -97.1876
+			latitude: 27.6371,
+			longitude: --97.1877
 		}
 	};
 	
@@ -204,7 +204,7 @@ myApp.factory("Polylines", function(){
 			path: [
 				// Abeam High Bridge
 				{
-					latitude: 27.6479,
+					latitude: 27.6469,
 					longitude: -97.2321
 				},
 				// Beachline
