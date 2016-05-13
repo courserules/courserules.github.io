@@ -27,9 +27,15 @@ myApp.factory("Polylines", function(){
 	};
 	
 	var stroke = {
+			kingsFour: {
 				color: '#133453',
 				weight: 3
-			};
+			},
+			mustang: {
+				color: '#133453',
+				weight: 3
+			} 
+		};
 		
  	var Polylines = [
     	// KINGS 4
@@ -55,7 +61,7 @@ myApp.factory("Polylines", function(){
 				points.yIntersection,
 				points.bridge
 			],
-			stroke: stroke,
+			stroke: stroke.kingsFour,
 			editable: false,
 			draggable: false,
 			geodesic: false,
@@ -72,10 +78,7 @@ myApp.factory("Polylines", function(){
 				points.yIntersection,
 				points.berclair
 			],
-			stroke: {
-				color: '#6060FB',
-				weight: 3
-			},
+			stroke: stroke.kingsFour,
 			editable: false,
 			draggable: false,
 			geodesic: false,
@@ -101,10 +104,7 @@ myApp.factory("Polylines", function(){
 					longitude: -97.6227
 				}
 			],
-			stroke: {
-				color: '#6060FB',
-				weight: 3
-			},
+			stroke: stroke.kingsFour,
 			editable: false,
 			draggable: false,
 			geodesic: false,
@@ -131,10 +131,7 @@ myApp.factory("Polylines", function(){
 					longitude: -97.5907
 				}
 			],
-			stroke: {
-				color: '#6060FB',
-				weight: 3
-			},
+			stroke: stroke.kingsFour,
 			editable: false,
 			draggable: false,
 			geodesic: false,
@@ -158,10 +155,7 @@ myApp.factory("Polylines", function(){
 					longitude: -97.6216
 				}
 			],
-			stroke: {
-				color: '#6060FB',
-				weight: 3
-			},
+			stroke: stroke.kingsFour,
 			editable: false,
 			draggable: false,
 			geodesic: false,
