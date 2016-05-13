@@ -23,6 +23,10 @@ myApp.factory("Polylines", function(){
 		"berclair": {
 			latitude: 28.5439,
 			longitude: -97.5738
+		},
+		"beachline": {
+			latitude: 27.6303,
+			longitude: -97.1876
 		}
 	};
 	
@@ -32,7 +36,11 @@ myApp.factory("Polylines", function(){
 				weight: 3
 			},
 			mustang: {
-				color: '#133453',
+				color: '#277552',
+				weight: 3
+			},
+			foxtrot: {
+				color: '#AA7539',
 				weight: 3
 			} 
 		};
@@ -167,7 +175,49 @@ myApp.factory("Polylines", function(){
 			}]
         },
         
-        // KNGT 29
+        // KNGT 35
+        {
+			id: 6,
+			path: [
+				// Initial 35
+				points.berclair,
+				// 35 Departure End
+				{
+					latitude: 28.5931,
+					longitude: -97.6160
+				}
+			],
+			stroke: stroke.kingsFour,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
+        // Mustang
+        {
+			id: 7,
+			path: [
+				// Initial 35
+				points.highbridge,
+				// 35 Departure End
+				points.beachline
+			],
+			stroke: stroke.mustang,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
 	];
 
   return Polylines
