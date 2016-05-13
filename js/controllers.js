@@ -202,6 +202,11 @@ myApp.factory("Polylines", function(){
         {
 			id: 7,
 			path: [
+				//13 Departure End
+				{
+					latitude: 27.6827,
+					longitude: -97.2805
+				},
 				// Abeam High Bridge
 				{
 					latitude: 27.6469,
