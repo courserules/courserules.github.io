@@ -32,15 +32,15 @@ myApp.factory("Polylines", function(){
 	
 	var stroke = {
 			kingsFour: {
-				color: '#133453',
+				color: '#255E69',
 				weight: 3
 			},
 			mustang: {
-				color: '#277552',
+				color: '#2B803E',
 				weight: 3
 			},
 			foxtrot: {
-				color: '#AA7539',
+				color: '#AA7039',
 				weight: 3
 			} 
 		};
