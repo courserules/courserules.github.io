@@ -239,37 +239,37 @@ myApp.factory("Polylines", function(){
     	{
 			id: 8,
 			path: [
-				// 
+				// Area 1 North Point
 				{
 					latitude: 29.0786,
 					longitude: -97.4983
 				},
-				// 
+				// Area 7 West Point
 				{
 					latitude: 28.6683,
 					longitude: -98.1255
 				},
-				// 
+				// Area 7 South Point
 				{
 					latitude: 28.5419,
 					longitude: -98.0752
 				},
-				// 
+				// Area 9 West Point
 				{
 					latitude: 28.1616,
 					longitude: -97.6263
 				},
-				// 
+				// Area 9 East Point
 				{
 					latitude: 28.1777,
 					longitude: -97.2861
 				},
-				// 
+				// Area 3 East Point
 				{
 					latitude: 28.6888,
 					longitude: -96.8536
 				},
-				// 
+				// Area 1 North Point
 				{
 					latitude: 29.0786,
 					longitude: -97.4983
