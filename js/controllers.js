@@ -237,7 +237,7 @@ myApp.factory("Polylines", function(){
         },
         // KINGS 4 MOA
     	{
-			id: 1,
+			id: 8,
 			path: [
 				// 
 				{
