@@ -35,6 +35,10 @@ myApp.factory("Polylines", function(){
 				color: '#34A5BA',
 				weight: 3
 			},
+			kingsFourMoa: {
+				color: '#000000',
+				weight: 3
+			},
 			mustang: {
 				color: '#37D35A',
 				weight: 3
@@ -231,6 +235,51 @@ myApp.factory("Polylines", function(){
 				repeat: '50px'
 			}]
         },
+        // KINGS 4 MOA
+    	{
+			id: 1,
+			path: [
+				// 
+				{
+					latitude: 29.0786,
+					longitude: -97.4983
+				},
+				// 
+				{
+					latitude: 28.6683,
+					longitude: -98.1255
+				},
+				// 
+				{
+					latitude: 28.5419,
+					longitude: -98.0752
+				},
+				// 
+				{
+					latitude: 28.1616,
+					longitude: -97.6263
+				},
+				// 
+				{
+					latitude: 28.1777,
+					longitude: -97.2861
+				},
+				// 
+				{
+					latitude: 28.6888,
+					longitude: -96.8536
+				} 
+				
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        }
 	];
 
   return Polylines
