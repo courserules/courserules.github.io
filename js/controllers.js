@@ -268,6 +268,11 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.6888,
 					longitude: -96.8536
+				},
+				// 
+				{
+					latitude: 29.0786,
+					longitude: -97.4983
 				} 
 				
 			],
