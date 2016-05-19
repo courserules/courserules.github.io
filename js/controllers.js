@@ -33,7 +33,7 @@ myApp.factory("Polylines", function(){
 	var stroke = {
 			kingsFour: {
 				color: '#34A5BA',
-				weight: 3
+				weight: 2
 			},
 			kingsFourMoa: {
 				color: '#000000',
