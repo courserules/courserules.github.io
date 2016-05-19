@@ -263,9 +263,37 @@ myApp.factory("Polylines", function(){
 				repeat: '50px'
 			}]
         },
+        // Mustang South
+        {
+			id: 9,
+			path: [
+				// Beachline
+				points.beachline,
+				// South
+				{
+					latitude: 27.4963,
+					longitude: -97.2550
+				},
+				// South end
+				{
+					latitude: 27.3664,
+					longitude: -97.3059
+				}
+			],
+			stroke: stroke.mustang,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
         // KINGS 4 MOA
     	{
-			id: 9,
+			id: 10,
 			path: [
 				// Area 1 North Point
 				{
