@@ -37,15 +37,15 @@ myApp.factory("Polylines", function(){
 			},
 			kingsFourMoa: {
 				color: '#000000',
-				weight: 3
+				weight: 2
 			},
 			mustang: {
 				color: '#37D35A',
-				weight: 3
+				weight: 2
 			},
 			foxtrot: {
 				color: '#FF9F43',
-				weight: 3
+				weight: 2
 			} 
 		};
 		
