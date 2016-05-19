@@ -211,7 +211,7 @@ myApp.factory("Polylines", function(){
         {
 			id: 7,
 			path: [
-				//13 Departure End
+				// 13 Departure End
 				{
 					latitude: 27.6825,
 					longitude: -97.2807
@@ -235,9 +235,37 @@ myApp.factory("Polylines", function(){
 				repeat: '50px'
 			}]
         },
+        // Mustang North
+        {
+			id: 8,
+			path: [
+				// Beachline
+				points.beachline,
+				// Port Aransas
+				{
+					latitude: 27.8121,
+					longitude: -97.0484
+				},
+				// Mustang 1
+				{
+					latitude: 27.9839,
+					longitude: -96.9138
+				}
+			],
+			stroke: stroke.mustang,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
         // KINGS 4 MOA
     	{
-			id: 8,
+			id: 9,
 			path: [
 				// Area 1 North Point
 				{
