@@ -246,11 +246,17 @@ myApp.factory("Polylines", function(){
 					latitude: 27.7766,
 					longitude: -97.0874
 				},
+				// Port Aransas North
+				{
+					latitude: 27.8727,
+					longitude: -97.0179
+				},
 				// Mustang 1
 				{
-					latitude: 27.9839,
-					longitude: -96.9138
-				}
+					latitude: 27.9946,
+					longitude: -96.9135
+				},
+				
 			],
 			stroke: stroke.mustang,
 			editable: false,
