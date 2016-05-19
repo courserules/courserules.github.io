@@ -243,8 +243,8 @@ myApp.factory("Polylines", function(){
 				points.beachline,
 				// Port Aransas
 				{
-					latitude: 27.8297,
-					longitude: -97.0388
+					latitude: 27.7758,
+					longitude: -97.0896
 				},
 				// Mustang 1
 				{
