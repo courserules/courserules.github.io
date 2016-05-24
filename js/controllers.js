@@ -79,6 +79,14 @@ myApp.factory("Polylines", function(){
 		"A9WP": {
 			latitude: 28.27694167,
 			longitude: -97.76193889
+		},
+		"FA1SP": {
+			latitude: 28.20183056,
+			longitude: -96.56483056
+		},
+		"FA1WP": {
+			latitude: 28.32899722,
+			longitude: -96.68900556
 		}
 	};
 	
@@ -549,10 +557,7 @@ myApp.factory("Polylines", function(){
 					longitude: -96.68450278
 				},
 				// Area 1 South Point
-				{
-					latitude: 28.20183056,
-					longitude: -96.56483056
-				},
+				points.FA1SP,
 				// Area 1 East Point
 				{
 					latitude: 28.33199722,
@@ -564,16 +569,12 @@ myApp.factory("Polylines", function(){
 					longitude: -96.46616389
 				},
 				// Area 1 West Point
-				{
-					latitude: 28.32899722,
-					longitude: -96.68900556
-				},
+				points.FA1WP,
 				// Area 2 West Point
 				{
 					latitude: 28.18649722,
 					longitude: -96.87484167
-				} 
-				
+				} 	
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -583,7 +584,27 @@ myApp.factory("Polylines", function(){
 			icons: [{
 				icon: {}
 					}]
-        }
+        },
+        // Foxtrot partition
+        {
+			id: 16,
+			path: [
+				// Area 1 West Point
+				points.FA1WP,
+				// Area 1 South Point
+				points.FA1SP
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
 
 	];
 
