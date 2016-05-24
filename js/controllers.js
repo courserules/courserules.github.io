@@ -92,6 +92,14 @@ myApp.factory("Polylines", function(){
 			latitude: 28.12966389,
 			longitude: -96.97883056
 		},
+		"M1SP": {
+			latitude: 27.93166944,
+			longitude: -96.87766944
+		},
+		"M2NP": {
+			latitude: 28.036834,
+			longitude: -97.0364
+		},
 		"M3NW": {
 			latitude: 27.608,
 			longitude: -97.29815556
@@ -643,10 +651,7 @@ myApp.factory("Polylines", function(){
 					longitude: -96.73316944
 				},
 				// Area 1 South Point
-				{
-					latitude: 27.93166944,
-					longitude: -96.87766944
-				},
+				points.M1SP,
 				// Area 2 South Point
 				{
 					latitude: 27.80616111,
@@ -658,10 +663,7 @@ myApp.factory("Polylines", function(){
 					longitude: -97.139825
 				},
 				// Area 2 North Point
-				{
-					latitude: 28.036834,
-					longitude: -97.0364
-				},
+				points.M2NP,
 				// Area 1 West Point
 				points.M1WP
  	
@@ -675,9 +677,27 @@ myApp.factory("Polylines", function(){
 				icon: {}
 					}]
         },
-        // Mustang South Outer Perimeter
+        // Mustang North Partition
     	{
 			id: 18,
+			path: [
+				// Area 2 North Point
+				points.M2NP,
+				// Area 1 South Point
+				points.M1SP	
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        },
+        // Mustang South Outer Perimeter
+    	{
+			id: 19,
 			path: [
 				// Area 3 Northwest Point
 				points.M3NW,
@@ -715,7 +735,7 @@ myApp.factory("Polylines", function(){
         },
         // Mustang South Partition
     	{
-			id: 19,
+			id: 20,
 			path: [
 				// Area 3 Southeast Point
 				points.M3SE,
