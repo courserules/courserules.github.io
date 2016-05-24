@@ -87,6 +87,18 @@ myApp.factory("Polylines", function(){
 		"FA1WP": {
 			latitude: 28.32899722,
 			longitude: -96.68900556
+		},
+		"M3NW": {
+			latitude: 27.608,
+			longitude: -97.29815556
+		},
+		"M3SE": {
+			latitude: 27.40483056,
+			longitude: -97.22016667
+		},
+		"M3SW": {
+			latitude: 27.43916667,
+			longitude: -97.37017222
 		}
 	};
 	
@@ -660,20 +672,14 @@ myApp.factory("Polylines", function(){
 			id: 18,
 			path: [
 				// Area 3 Northwest Point
-				{
-					latitude: 27.608,
-					longitude: -97.29815556
-				},
+				points.M3NW,
 				// Area 3 Northeast Point
 				{
 					latitude: 27.55633333,
 					longitude: -97.14283056
 				},
 				// Area 3 Southeast Point
-				{
-					latitude: 27.40483056,
-					longitude: -97.22016667
-				},
+				points.M3SE,
 				// Area 4 Southeast Point
 				{
 					latitude: 27.21266389,
@@ -685,10 +691,9 @@ myApp.factory("Polylines", function(){
 					longitude: -97.42417222
 				},
 				// Area 3 Southwest Point
-				{
-					latitude: 27.43916667,
-					longitude: -97.37017222
-				}
+				points.M3SW,
+				// Area 3 Northwest Point
+				points.M3NW
  	
 			],
 			stroke: stroke.kingsFourMoa,
