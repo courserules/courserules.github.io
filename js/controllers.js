@@ -655,6 +655,51 @@ myApp.factory("Polylines", function(){
 				icon: {}
 					}]
         },
+        // Mustang South Outer Perimeter
+    	{
+			id: 18,
+			path: [
+				// Area 3 Northwest Point
+				{
+					latitude: 27.608,
+					longitude: -97.29815556
+				},
+				// Area 3 Northeast Point
+				{
+					latitude: 27.55633333,
+					longitude: -97.14283056
+				},
+				// Area 3 Southeast Point
+				{
+					latitude: 27.40483056,
+					longitude: -97.22016667
+				},
+				// Area 4 Southeast Point
+				{
+					latitude: 27.21266389,
+					longitude: -97.28215833
+				},
+				// Area 4 Southwest Point
+				{
+					latitude: 27.26183056,
+					longitude: -97.42417222
+				},
+				// Area 3 Southwest Point
+				{
+					latitude: 27.43916667,
+					longitude: -97.37017222
+				}
+ 	
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        },
 
 	];
 
