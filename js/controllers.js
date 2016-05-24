@@ -88,6 +88,10 @@ myApp.factory("Polylines", function(){
 			latitude: 28.32899722,
 			longitude: -96.68900556
 		},
+		"M1WP": {
+			latitude: 28.12966389,
+			longitude: -96.97883056
+		}
 		"M3NW": {
 			latitude: 27.608,
 			longitude: -97.29815556
@@ -622,10 +626,7 @@ myApp.factory("Polylines", function(){
 			id: 17,
 			path: [
 				// Area 1 West Point
-				{
-					latitude: 28.12966389,
-					longitude: -96.97883056
-				},
+				points.M1WP,
 				// Area 1 Inner West Point
 				{
 					latitude: 28.11816389,
@@ -656,11 +657,13 @@ myApp.factory("Polylines", function(){
 					latitude: 27.89783056,
 					longitude: -97.139825
 				},
-				// Area 1 West Point
+				// Area 2 North Point
 				{
 					latitude: 28.036834,
 					longitude: -97.0364
-				}
+				},
+				// Area 1 West Point
+				points.M1WP
  	
 			],
 			stroke: stroke.kingsFourMoa,
