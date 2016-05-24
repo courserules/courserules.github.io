@@ -605,6 +605,46 @@ myApp.factory("Polylines", function(){
 				repeat: '50px'
 			}]
         },
+        // Mustang North Outer Perimeter
+    	{
+			id: 17,
+			path: [
+				// Area 1 West Point
+				{
+					latitude: 28.12966389,
+					longitude: -96.97883056
+				},
+				// Area 1 Inner West Point
+				{
+					latitude: 28.11816389,
+					longitude: -96.92866111
+				},
+				// Area 1 North Point
+				{
+					latitude: 28.05916389,
+					longitude: -96.73316944
+				},
+				// Area 1 East Point
+				{
+					latitude: 28.18249722,
+					longitude: -96.85966944
+				},
+				// Area 1 South Point
+				{
+					latitude: 27.93166944,
+					longitude: -96.87766944
+				},
+ 	
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        },
 
 	];
 
