@@ -91,7 +91,7 @@ myApp.factory("Polylines", function(){
 		"M1WP": {
 			latitude: 28.12966389,
 			longitude: -96.97883056
-		}
+		},
 		"M3NW": {
 			latitude: 27.608,
 			longitude: -97.29815556
