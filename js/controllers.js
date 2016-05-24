@@ -27,6 +27,54 @@ myApp.factory("Polylines", function(){
 		"beachline": {
 			latitude: 27.6344,
 			longitude: -97.1809
+		},
+		"A1EP": {
+			latitude: 28.94499722,
+			longitude: -97.27638056
+		},
+		"A2EP": {
+			latitude: 28.81416667,
+			longitude: -97.06
+		},
+		"A1WP": {
+			latitude: 28.90666667,
+			longitude: -97.65860556
+		},
+		"A2WP": {
+			latitude: 0,
+			longitude: 0
+		},
+		"A3WP": {
+			latitude: 0,
+			longitude: 0
+		},
+		"A3SP": {
+			latitude: 28.48138889,
+			longitude: -97.03221389
+		},
+		"A4WP": {
+			latitude: 28.76,
+			longitude: -97.88333889
+		},
+		"A5WP": {
+			latitude: 28.59611111,
+			longitude: -97.66361111
+		},
+		"A6WP": {
+			latitude: 28.43444444,
+			longitude: -97.44305
+		},
+		"A6SP": {
+			latitude: 28.26444444,
+			longitude: -97.21805833
+		},
+		"A8WP": {
+			latitude: 28.45222222,
+			longitude: -97.97
+		},
+		"A9WP": {
+			latitude: 28.27694167,
+			longitude: -97.76193889
 		}
 	};
 	
@@ -297,45 +345,52 @@ myApp.factory("Polylines", function(){
 				repeat: '50px'
 			}]
         },
-        // KINGS 4 MOA
+        // KINGS 4 MOA Outer Perimeter
     	{
 			id: 10,
 			path: [
 				// Area 1 North Point
 				{
-					latitude: 29.0786,
-					longitude: -97.4983
+					latitude: 29.07861111,
+					longitude: -97.49833333 
+				},
+				// Area 1 East Point
+				points.A1EP,
+				// Area 2 East Point
+				points.A2EP,
+				// Area 3 East Point
+				{
+					latitude: 28.68888611,
+					longitude: -96.85361111
+				},
+				// Area 3 South Point
+				points.A3SP,
+				// Area 6 South Point
+				points.A6SP,
+				// Area 9 Southeast Point
+				{
+					latitude: 28.1775,
+					longitude: -97.29221944
+				},
+				// Area 9 Southwest Point
+				{
+					latitude: 28.16166389,
+					longitude: -97.62638611
+				},
+				// Area 9 West Point
+				points.A9WP,
+				// Area 8 West Point
+				points.A8WP,
+				// Area 7 Mid Point
+				{
+					latitude: 28.54194444,
+					longitude: -98.07527222
 				},
 				// Area 7 West Point
 				{
-					latitude: 28.6683,
-					longitude: -98.1255
-				},
-				// Area 7 South Point
-				{
-					latitude: 28.5419,
-					longitude: -98.0752
-				},
-				// Area 9 West Point
-				{
-					latitude: 28.1616,
-					longitude: -97.6263
-				},
-				// Area 9 East Point
-				{
-					latitude: 28.1777,
-					longitude: -97.2861
-				},
-				// Area 3 East Point
-				{
-					latitude: 28.6888,
-					longitude: -96.8536
-				},
-				// Area 1 North Point
-				{
-					latitude: 29.0786,
-					longitude: -97.4983
-				} 
+					latitude: 28.66972222,
+					longitude: -98.12055833
+				}
 				
 			],
 			stroke: stroke.kingsFourMoa,
@@ -347,7 +402,7 @@ myApp.factory("Polylines", function(){
 				icon: {}
 					}]
         },
-        // FOXTROT
+        // FOXTROT Outer Perimeter
     	{
 			id: 11,
 			path: [
