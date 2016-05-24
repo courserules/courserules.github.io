@@ -346,7 +346,58 @@ myApp.factory("Polylines", function(){
 			icons: [{
 				icon: {}
 					}]
+        },
+        // FOXTROT
+    	{
+			id: 11,
+			path: [
+				// Area 2 West Point
+				{
+					latitude: 28.18649722,
+					longitude: -96.87484167
+				},
+				// Area 2 South Point
+				{
+					latitude: 28.08733056,
+					longitude: -96.74798889
+				},
+				// Area 2 East Point
+				{
+					latitude: 28.133,
+					longitude: -96.68450278
+				},
+				// Area 1 South Point
+				{
+					latitude: 28.20183056,
+					longitude: -96.56483056
+				},
+				// Area 1 East Point
+				{
+					latitude: 28.32899722,
+					longitude: -96.68900556
+				},
+				// Area 1 North Point
+				{
+					latitude: 28.49866667,
+					longitude: -96.46616389
+				},
+				// Area 1 West Point
+				{
+					latitude: 28.33199722,
+					longitude: -96.3315
+				} 
+				
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
         }
+
 	];
 
   return Polylines
