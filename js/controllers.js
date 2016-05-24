@@ -373,8 +373,8 @@ myApp.factory("Polylines", function(){
 				},
 				// Area 1 East Point
 				{
-					latitude: 28.32899722,
-					longitude: -96.68900556
+					latitude: 28.33199722,
+					longitude: -96.3315
 				},
 				// Area 1 North Point
 				{
@@ -383,8 +383,8 @@ myApp.factory("Polylines", function(){
 				},
 				// Area 1 West Point
 				{
-					latitude: 28.33199722,
-					longitude: -96.3315
+					latitude: 28.32899722,
+					longitude: -96.68900556
 				} 
 				
 			],
