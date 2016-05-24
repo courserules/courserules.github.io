@@ -457,9 +457,33 @@ myApp.factory("Polylines", function(){
 				repeat: '50px'
 			}]
         },
+        // Kings 4 MOA southeast DME partition
+        {
+			id: 12,
+			path: [
+				// Area 9 West Point
+				points.A9WP,
+				// Area 6 West Point
+				points.A6WP,
+				// Area 3 West Point
+				points.A3WP,
+				// Area 2 East Point
+				points.A2EP
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {},
+				offset: '25px',
+				repeat: '50px'
+			}]
+        },
         // FOXTROT Outer Perimeter
     	{
-			id: 12,
+			id: 13,
 			path: [
 				// Area 2 West Point
 				{
