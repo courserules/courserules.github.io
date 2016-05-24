@@ -385,6 +385,11 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.32899722,
 					longitude: -96.68900556
+				},
+				// Area 2 West Point
+				{
+					latitude: 28.18649722,
+					longitude: -96.87484167
 				} 
 				
 			],
