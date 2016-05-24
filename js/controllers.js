@@ -390,8 +390,37 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.66972222,
 					longitude: -98.12055833
+				},
+				// Area 7 DME West
+				{
+					latitude: 28.69194444,
+					longitude: -98.04694167
+				},
+				// Area 7 DME East
+				{
+					latitude: 28.71944167,
+					longitude: -97.97278056
+				},
+				// Area 4 West Point
+				points.A4WP,
+				// Area 4 DME East
+				{
+					latitude: 28.80749722,
+					longitude: -97.79083056
+				},
+				// Area 4 DME West
+				{
+					latitude: 28.84999722,
+					longitude: -97.73277222
+				},
+				// Area 1 West Point
+				points.A1WP,
+				// Area 1 DME
+				{
+					latitude: 28.95916667,
+					longitude: -97.59999444
 				}
-				
+						
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
