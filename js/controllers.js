@@ -28,6 +28,10 @@ myApp.factory("Polylines", function(){
 			latitude: 27.6344,
 			longitude: -97.1809
 		},
+		"A1NP": {
+			latitude: 29.07861111,
+			longitude: -97.49833333 
+		},
 		"A1EP": {
 			latitude: 28.94499722,
 			longitude: -97.27638056
@@ -350,10 +354,7 @@ myApp.factory("Polylines", function(){
 			id: 10,
 			path: [
 				// Area 1 North Point
-				{
-					latitude: 29.07861111,
-					longitude: -97.49833333 
-				},
+				points.A1NP,
 				// Area 1 East Point
 				points.A1EP,
 				// Area 2 East Point
@@ -419,8 +420,9 @@ myApp.factory("Polylines", function(){
 				{
 					latitude: 28.95916667,
 					longitude: -97.59999444
-				}
-						
+				},
+				// Area 1 North Point
+				points.A1NP		
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
