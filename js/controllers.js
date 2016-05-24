@@ -634,6 +634,16 @@ myApp.factory("Polylines", function(){
 					latitude: 27.93166944,
 					longitude: -96.87766944
 				},
+				// Area 2 South Point
+				{
+					latitude: 27.80616111,
+					longitude: -96.99833611
+				},
+				// Area 2 West Point
+				{
+					latitude: 27.89783056,
+					longitude: -97.139825
+				}
  	
 			],
 			stroke: stroke.kingsFourMoa,
