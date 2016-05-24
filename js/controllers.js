@@ -705,6 +705,24 @@ myApp.factory("Polylines", function(){
 				icon: {}
 					}]
         },
+        // Mustang South Partition
+    	{
+			id: 19,
+			path: [
+				// Area 3 Southeast Point
+				points.M3SE,
+				// Area 3 Southwest Point
+				points.M3SW	
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        }
 
 	];
 
