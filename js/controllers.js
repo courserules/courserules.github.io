@@ -126,19 +126,27 @@ myApp.factory("Polylines", function(){
 			},
 			mustang: {
 				color: '#37D35A',
-				weight: 2
+				weight: 2,
+				opacity: 0
 			},
 			foxtrot: {
 				color: '#FF9F43',
-				weight: 2
+				weight: 2,
+				opacity: 0
 			} 
 		};
 	
-	var lineSymbol = {
-		path: 'M 0,-1 0,1',
-		strokeOpacity: 1,
-		scale: 2
-  	};
+	var icons = { 
+			"dashed": [{
+				icon: {
+					path: 'M 0,-1 0,1',
+					strokeOpacity: 1,
+					scale: 2
+				},
+				offset: '0',
+				repeat: '15px'
+			}]
+  		};
 
 		
  	var Polylines = [
@@ -170,11 +178,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: lineSymbol,
-				offset: '0',
-      			repeat: '15px'
-			}]
+			icons: icons.dashed
         },
         
         // KNGT North Flow
@@ -189,9 +193,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {}
-					}]
+			icons: icons.dashed
         },
         
         // KNGT 11
@@ -215,11 +217,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         
         // KNGT 29
@@ -242,11 +240,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         
         // KNGT 17
@@ -266,11 +260,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         
         // KNGT 35
@@ -295,11 +285,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         // Mustang
         {
@@ -323,11 +309,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         // Mustang North
         {
@@ -357,11 +339,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         // Mustang South
         {
@@ -385,11 +363,7 @@ myApp.factory("Polylines", function(){
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+			icons: icons.dashed
         },
         // KINGS 4 MOA Outer Perimeter
     	{
@@ -566,10 +540,8 @@ myApp.factory("Polylines", function(){
 			geodesic: false,
 			visible: true,
 			icons: [{
-				icon: {},
-				offset: '25px',
-				repeat: '50px'
-			}]
+				icon: {}
+					}]
         },
         // FOXTROT Outer Perimeter
     	{
