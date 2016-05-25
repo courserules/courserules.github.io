@@ -1044,8 +1044,8 @@ myApp.controller("gMap",function($scope, Markers, Polylines, Options){
     zoom: 12,
     mapTypeControl: true,
     mapTypeControlOptions: {
-        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-        position: google.maps.ControlPosition.BOTTOM_CENTER
+        style: MapTypeControlStyle.HORIZONTAL_BAR,
+        position: ControlPosition.BOTTOM_CENTER
     }
   };  
   // Add options to scope
