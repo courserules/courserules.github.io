@@ -173,7 +173,7 @@ myApp.factory("Polylines", function(){
 			icons: [{
 				icon: lineSymbol,
 				offset: '0',
-      			repeat: '20px'
+      			repeat: '15px'
 			}]
         },
         
