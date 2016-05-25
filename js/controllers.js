@@ -135,7 +135,7 @@ myApp.factory("Polylines", function(){
 				opacity: 0
 			} 
 		};
-	
+
 	var icons = { 
 			"dashed": [{
 				icon: {
@@ -148,7 +148,6 @@ myApp.factory("Polylines", function(){
 			}]
   		};
 
-		
  	var Polylines = [
     	// KINGS 4
     	{
@@ -988,6 +987,16 @@ myApp.factory("Options", function(){
 				},
 				{
 					"hue": "#ff7700"
+				}
+			]
+    	},
+    	// Controls labels of airfields/airports
+		{
+			"featureType": "transit.station.airport",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"visibility": "on"
 				}
 			]
     	}
