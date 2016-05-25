@@ -165,6 +165,7 @@ myApp.factory("Polylines", function(){
 				points.bridge
 			],
 			stroke: stroke.kingsFour,
+			strokeOpacity: 0,
 			editable: false,
 			draggable: false,
 			geodesic: false,
