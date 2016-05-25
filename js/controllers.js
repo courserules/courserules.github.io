@@ -118,7 +118,7 @@ myApp.factory("Polylines", function(){
 			kingsFour: {
 				color: '#34A5BA',
 				weight: 2,
-				strokeOpacity: 0
+				opacity: 0
 			},
 			kingsFourMoa: {
 				color: '#000000',
