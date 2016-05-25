@@ -1005,6 +1005,9 @@ myApp.factory("Options", function(){
 					"lightness": -100
 				},
 				{
+					"weight": 0.1
+				},
+				{
 					"visibility": "on"
 				}
 			]

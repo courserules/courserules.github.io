@@ -9,6 +9,6 @@ Notes on development:
 * http://www.noxidsoft.com/development/using-jekyll-and-angularjs-together/
 * https://snazzymaps.com/style/55/subtle-greyscale-map
 * http://stackoverflow.com/questions/18432443/google-map-style-airport-runway
-* http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+* http://googlemaps.github.io/js-samples/styledmaps/wizard/index.html
 * http://www.darrinward.com/lat-long/?id=1979903
 * http://andrew.hedges.name/experiments/convert_lat_long/
