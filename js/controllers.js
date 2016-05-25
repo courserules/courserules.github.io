@@ -898,7 +898,7 @@ myApp.factory("Options", function(){
 					"lightness": -100
 				},
 				{
-					"visibility": "on"
+					"visibility": "off"
 				}
 			]
 		},
