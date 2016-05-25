@@ -136,7 +136,7 @@ myApp.factory("Polylines", function(){
 	var lineSymbol = {
 		path: 'M 0,-1 0,1',
 		strokeOpacity: 1,
-		scale: 4
+		scale: 2
   	};
 
 		
