@@ -996,6 +996,15 @@ myApp.factory("Options", function(){
 			"elementType": "labels",
 			"stylers": [
 				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": -100
+				},
+				{
 					"visibility": "on"
 				}
 			]
