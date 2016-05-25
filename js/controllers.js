@@ -885,6 +885,24 @@ myApp.factory("Options", function(){
 			]
 		},
 		{
+			"featureType": "road.highway",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"hue": "#000000"
+				},
+				{
+					"saturation": 0
+				},
+				{
+					"lightness": -100
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
 			"featureType": "water",
 			"elementType": "geometry",
 			"stylers": [
