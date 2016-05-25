@@ -1042,11 +1042,7 @@ myApp.controller("gMap",function($scope, Markers, Polylines, Options){
   $scope.map = { 
     center: { latitude: 27.6932, longitude: -97.2805 }, 
     zoom: 12,
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-        style: MapTypeControlStyle.HORIZONTAL_BAR,
-        position: ControlPosition.BOTTOM_CENTER
-    }
+
   };  
   // Add options to scope
   $scope.options = Options;
