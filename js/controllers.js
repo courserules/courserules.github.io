@@ -144,7 +144,7 @@ myApp.factory("Polylines", function(){
 					scale: 2
 				},
 				offset: '0',
-				repeat: '15px'
+				repeat: '10px'
 			}]
   		};
 
