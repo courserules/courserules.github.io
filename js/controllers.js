@@ -132,6 +132,13 @@ myApp.factory("Polylines", function(){
 				weight: 2
 			} 
 		};
+	
+	var lineSymbol = {
+		path: 'M 0,-1 0,1',
+		strokeOpacity: 1,
+		scale: 4
+  	};
+
 		
  	var Polylines = [
     	// KINGS 4
@@ -163,8 +170,10 @@ myApp.factory("Polylines", function(){
 			geodesic: false,
 			visible: true,
 			icons: [{
-				icon: {}
-					}]
+				icon: lineSymbol,
+				offset: '0',
+      			repeat: '20px'
+			}]
         },
         
         // KNGT North Flow
