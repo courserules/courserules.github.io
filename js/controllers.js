@@ -117,7 +117,8 @@ myApp.factory("Polylines", function(){
 	var stroke = {
 			kingsFour: {
 				color: '#34A5BA',
-				weight: 2
+				weight: 2,
+				strokeOpacity: 0
 			},
 			kingsFourMoa: {
 				color: '#000000',
@@ -165,7 +166,6 @@ myApp.factory("Polylines", function(){
 				points.bridge
 			],
 			stroke: stroke.kingsFour,
-			strokeOpacity: 0,
 			editable: false,
 			draggable: false,
 			geodesic: false,
