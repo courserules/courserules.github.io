@@ -1030,7 +1030,13 @@ myApp.factory("Options", function(){
 				}
 			]
     	}
-	]};
+	],
+		mapTypeControl: true,
+        mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            }
+	};
 	return Options;
 });
 
@@ -1042,13 +1048,6 @@ myApp.controller("gMap",function($scope, Markers, Polylines, Options){
   $scope.map = { 
     center: { latitude: 27.6932, longitude: -97.2805 }, 
     zoom: 12,
-    options: {
-            mapTypeControl: true,
-            mapTypeControlOptions: {
-                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-                position: google.maps.ControlPosition.BOTTOM_CENTER
-            }}
-
   };  
   // Add options to scope
   $scope.options = Options;
