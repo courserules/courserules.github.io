@@ -1033,8 +1033,8 @@ myApp.factory("Options", function(){
 	],
 		mapTypeControl: true,
 		mapTypeControlOptions: {
-			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-			position: google.maps.ControlPosition.BOTTOM_CENTER
+			style: HORIZONTAL_BAR,
+			position: BOTTOM_CENTER
         },
 	};
 	return Options;
