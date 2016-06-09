@@ -1031,8 +1031,7 @@ myApp.factory("Options", function(){
 			]
     	}
 	],
-		mapTypeControl: true,
-		MapTypeControlOptions: {},
+		mapTypeControl: false,
 	};
 	return Options;
 });
