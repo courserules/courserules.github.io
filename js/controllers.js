@@ -1032,10 +1032,6 @@ myApp.factory("Options", function(){
     	}
 	],
 		mapTypeControl: true,
-        mapTypeControlOptions: {
-                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-                position: google.maps.ControlPosition.BOTTOM_CENTER
-            }
 	};
 	return Options;
 });
