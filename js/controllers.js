@@ -1047,7 +1047,7 @@ myApp.controller("gMap",function($scope, Markers, Polylines, Options){
             mapTypeControlOptions: {
                 style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
                 position: google.maps.ControlPosition.BOTTOM_CENTER
-            }
+            }}
 
   };  
   // Add options to scope
