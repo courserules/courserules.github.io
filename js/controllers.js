@@ -1032,6 +1032,7 @@ myApp.factory("Options", function(){
     	}
 	],
 		mapTypeControl: true,
+		MapTypeControlOptions: {postion: LEFT_BOTTOM},
 	};
 	return Options;
 });
