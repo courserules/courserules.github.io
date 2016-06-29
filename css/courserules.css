@@ -2,10 +2,15 @@
 -------------------------------------------------- */
 
 
-html,body {
-  height: 100%;
+html {
+  position: relative;
+  min-height: 100%;
   /* The html and body elements cannot have any padding or margin. */
   color: #5a5a5a;
+}
+
+body {
+	margin-bottom: 60px;
 }
 
 .btn-primary {
@@ -503,6 +508,16 @@ nav.detached {
 #footer p.text-center {
 	margin-top: 20px;
 }
+
+.footer {
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
