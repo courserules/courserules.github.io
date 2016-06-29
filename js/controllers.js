@@ -3,6 +3,14 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
   $interpolateProvider.endSymbol(']]');
 });
 
+myApp.config(function(uiGmapGoogleMapApiProvider) {
+	uiGmapGoogleMapApiProvider.configure({
+		key: '',
+		v: '3',
+		libraries: 'weather,geometry,visualization'
+	});
+});
+
 // **************************************************************
 // POLYLINES 
 // **************************************************************
@@ -1032,10 +1040,7 @@ myApp.factory("Options", function(){
     	}
 	],
 		mapTypeControl: true,
-		mapTypeControlOptions: {
-			style: HORIZONTAL_BAR,
-			position: BOTTOM_CENTER
-        },
+
 	};
 	return Options;
 });
