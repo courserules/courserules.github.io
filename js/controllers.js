@@ -223,9 +223,7 @@ myApp.factory("Polylines", function(){
 			id: 1,
 			path: [
 				points.aluminumPlant, 
-				points.abeamBayside,
-				points.yIntersection,
-				points.bridge
+				points.abeamBayside
 			],
 			stroke: stroke.kingsFour,
 			clickable: true,
