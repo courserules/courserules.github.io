@@ -751,7 +751,7 @@ myApp.factory("Polylines", function(){
 // **************************************************************
 myApp.factory("Markers", function(){
 	function playSound(soundfile) {
-  		document.getElementByClassName("ng-scope").innerHTML=
+  		document.getElementById("dummy").innerHTML=
     	"<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 	}
 	
