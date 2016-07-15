@@ -751,8 +751,8 @@ myApp.factory("Polylines", function(){
 // **************************************************************
 myApp.factory("Markers", function(){
 	function playSound(soundfile) {
-  		document.getElementById("dummy").innerHTML=
-    	"<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" type=\"audio/mpeg\" />";
+  		document.getElementById("dummy").innerHTML= 
+  		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
 	}
 	
 	var Markers = [
