@@ -760,6 +760,9 @@ myApp.factory("Markers", function(){
 		  },
 		  "window": {
 			"title": "High Bridge"
+		  },
+		  "options": {
+		  	"icon":'..img/audio.png'
 		  }
 		},
 		// Aluminum Plant
