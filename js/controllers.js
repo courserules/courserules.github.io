@@ -758,12 +758,14 @@ myApp.factory("Markers", function(){
 			"latitude": "27.6348",
 			"longitude": "-97.2398"
 		  },
-		  "window": {
-			"title": "High Bridge"
-		  },
 		  "options": {
 		  	"icon":'../img/audio.png'
-		  }
+		  },
+		  "events": {
+        	"click": function (marker, eventName, args) {
+				 playSound('../audio/departure.m4a');
+				}
+      	}
 		},
 		// Aluminum Plant
 		{
