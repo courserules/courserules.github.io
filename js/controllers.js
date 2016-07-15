@@ -15,6 +15,13 @@ myApp.config(function(uiGmapGoogleMapApiProvider) {
 // POLYLINES 
 // **************************************************************
 myApp.factory("Polylines", function(){
+ 	function playSound(soundfile) {
+  		var audio = document.getElementById("dummy");
+  		audio.innerHTML= 
+  		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
+  		audio.play();
+	}
+ 	
  	var points = {
  		"abeamBayside": {
  			latitude: 28.0937,
@@ -181,11 +188,17 @@ myApp.factory("Polylines", function(){
 				points.bridge
 			],
 			stroke: stroke.kingsFour,
+			clickable: true,
 			editable: false,
 			draggable: false,
 			geodesic: false,
 			visible: true,
-			icons: icons.dashed
+			icons: icons.dashed,
+			events: {
+        	"click": function (marker, eventName, args) {
+				 playSound('../audio/departure.mp3');
+				}
+      	}
         },
         
         // KNGT North Flow
