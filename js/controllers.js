@@ -763,7 +763,7 @@ myApp.factory("Markers", function(){
 		  },
 		  "events": {
         	"click": function (marker, eventName, args) {
-				 playSound('../audio/departure.m4a');
+				 playSound('../audio/departure.mp3');
 				}
       	}
 		},
