@@ -23,6 +23,14 @@ myApp.factory("Polylines", function(){
 	};
  	
  	var points = {
+ 		"abeamHighBridge": {
+ 			latitude: 27.6479,
+			longitude: -97.2321
+ 		},
+ 		"aluminumPlant": {
+			latitude: 27.8794,
+			longitude: -97.2578
+		},
  		"abeamBayside": {
  			latitude: 28.0937,
 			longitude: -97.2578
@@ -173,16 +181,48 @@ myApp.factory("Polylines", function(){
 					latitude: 27.6829,
 					longitude: -97.2798
 				},
-				// Abeam High Bridge
-				{
-					latitude: 27.6479,
-					longitude: -97.2321
-				},
-				// Aluminum Plant
-				{
-					latitude: 27.8794,
-					longitude: -97.2578
-				}, 
+				points.abeamHighBridge
+			],
+			stroke: stroke.kingsFour,
+			clickable: true,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: icons.dashed,
+			events: {
+        	click: function (p, eventName, args) {
+				 playSound('../audio/departure.mp3');
+				}
+      	}
+        },
+        
+        // Highbridge to Aluminum Plant
+        {
+			id: 1,
+			path: [
+				points.abeamHighBridge,
+				points.aluminumPlant
+			],
+			stroke: stroke.kingsFour,
+			clickable: true,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: icons.dashed,
+			events: {
+        	click: function (p, eventName, args) {
+				 playSound('../audio/departureHandoff.mp3');
+				}
+      	}
+        },
+        
+        // Aluminum Plant to Bayside
+        {
+			id: 1,
+			path: [
+				points.aluminumPlant, 
 				points.abeamBayside,
 				points.yIntersection,
 				points.bridge
@@ -196,7 +236,29 @@ myApp.factory("Polylines", function(){
 			icons: icons.dashed,
 			events: {
         	click: function (p, eventName, args) {
-				 playSound('../audio/departure.mp3');
+				 playSound('../audio/baysideTerminate.mp3');
+				}
+      	}
+        },
+        
+        // Bayside to the Y
+        {
+			id: 1,
+			path: [ 
+				points.abeamBayside,
+				points.yIntersection,
+				points.bridge
+			],
+			stroke: stroke.kingsFour,
+			clickable: true,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: icons.dashed,
+			events: {
+        	click: function (p, eventName, args) {
+				 playSound('../audio/houstonCenter.mp3');
 				}
       	}
         },
@@ -386,7 +448,7 @@ myApp.factory("Polylines", function(){
 			icons: icons.dashed
         },
         // KINGS 4 MOA Outer Perimeter
-    	{
+    	  {
 			id: 10,
 			path: [
 				// Area 1 North Point
@@ -564,7 +626,7 @@ myApp.factory("Polylines", function(){
 					}]
         },
         // FOXTROT Outer Perimeter
-    	{
+    	  {
 			id: 15,
 			path: [
 				// Area 2 West Point
@@ -632,7 +694,7 @@ myApp.factory("Polylines", function(){
 			}]
         },
         // Mustang North Outer Perimeter
-    	{
+    	  {
 			id: 17,
 			path: [
 				// Area 1 West Point
@@ -680,7 +742,7 @@ myApp.factory("Polylines", function(){
 					}]
         },
         // Mustang North Partition
-    	{
+    	  {
 			id: 18,
 			path: [
 				// Area 2 North Point
@@ -698,7 +760,7 @@ myApp.factory("Polylines", function(){
 					}]
         },
         // Mustang South Outer Perimeter
-    	{
+    	  {
 			id: 19,
 			path: [
 				// Area 3 Northwest Point
@@ -736,7 +798,7 @@ myApp.factory("Polylines", function(){
 					}]
         },
         // Mustang South Partition
-    	{
+    	  {
 			id: 20,
 			path: [
 				// Area 3 Southeast Point
