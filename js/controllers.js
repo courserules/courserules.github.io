@@ -750,6 +750,11 @@ myApp.factory("Polylines", function(){
 // MARKERS
 // **************************************************************
 myApp.factory("Markers", function(){
+	function playSound(soundfile) {
+  		document.getElementByClassName("ng-scope").innerHTML=
+    	"<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+	}
+	
 	var Markers = [
 		// High Bridge
 		{
