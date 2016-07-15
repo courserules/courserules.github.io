@@ -19,6 +19,7 @@ myApp.factory("Polylines", function(){
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
+  		audio.load();
   		audio.play();
 	};
  	
