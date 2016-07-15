@@ -20,7 +20,7 @@ myApp.factory("Polylines", function(){
   		audio.innerHTML= 
   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
   		audio.play();
-	}
+	};
  	
  	var points = {
  		"abeamBayside": {
@@ -195,7 +195,7 @@ myApp.factory("Polylines", function(){
 			visible: true,
 			icons: icons.dashed,
 			events: {
-        	"click": function (marker, eventName, args) {
+        	click: function (p, eventName, args) {
 				 playSound('../audio/departure.mp3');
 				}
       	}
