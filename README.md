@@ -12,3 +12,5 @@ Notes on development:
 * http://googlemaps.github.io/js-samples/styledmaps/wizard/index.html
 * http://www.darrinward.com/lat-long/?id=1979903
 * http://andrew.hedges.name/experiments/convert_lat_long/
+* http://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+* http://www.elated.com/articles/html5-audio/
