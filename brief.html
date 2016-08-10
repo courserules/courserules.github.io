@@ -6,7 +6,7 @@ permalink: /brief/
 <div class="container marketing" id="brief">
 
 	<div class="row">
-		<div class="col-xs-12 col-md-7">
+		<div class="col-xs-12 col-md-7" ng-app="myApp" ng-controller="datCtrl">
 			<h3>Items to Review Before You Brief</h3>
 			<p>In general, if you are briefing in the briefing spaces, pull up the METARs/TAFs, NOTAMs, and BASH on the computer, otherwise print them off right before your brief.</p>
 			<h4>Local Area:</h4>
@@ -16,7 +16,7 @@ permalink: /brief/
 				<li><a href="https://www.notams.faa.gov/dinsQueryWeb/queryRetrievalMapAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&retrieveLocId=kngp+kngt+knwl+krkp+ktfp+kcrp+kvct+knqi&actionType=notamRetrievalByICAOs" target="_blank">NOTAMs</a></li>
 				<li><a href="http://www.usahas.com/AHASMap.html?Area=VT-28" target="_blank">BASH</a></li>
 				<li><a href="http://www.cnatra.navy.mil" target="_blank">CNATRA App Plane Assignments</a></li>
-				<li><a href="https://www.cnatra.navy.mil/scheds/tw4/SQ-VT-28/!{{ site.time | date: '%Y-%m-%d' }}!VT-28!Frontpage.pdf" target="_blank">Today's Front Page</a></li>
+				<li><a href="https://www.cnatra.navy.mil/scheds/tw4/SQ-VT-28/![[ today | date: 'y-MM-dd' ]]!VT-28!Frontpage.pdf" target="_blank">Today's Front Page</a></li>
 			</ul>
 		</div><!-- /span -->
 		
