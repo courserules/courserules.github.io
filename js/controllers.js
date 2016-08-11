@@ -1147,3 +1147,7 @@ myApp.controller("gMap",function($scope, Markers, Polylines, Options){
   // Add polylines to scope
   $scope.polylines = Polylines;
 });
+
+myApp.controller('date', function($scope) {
+    $scope.today = new Date();
+});
