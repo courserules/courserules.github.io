@@ -14,3 +14,6 @@ Notes on development:
 * http://andrew.hedges.name/experiments/convert_lat_long/
 * http://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
 * http://www.elated.com/articles/html5-audio/
+* http://stackoverflow.com/questions/24316355/multiple-controllers-with-angularjs-in-single-page-app
+* https://docs.angularjs.org/api/ng/directive/ngHref
+* http://www.w3schools.com/angular/ng_filter_date.asp
