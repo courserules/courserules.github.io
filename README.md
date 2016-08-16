@@ -17,3 +17,4 @@ Notes on development:
 * http://stackoverflow.com/questions/24316355/multiple-controllers-with-angularjs-in-single-page-app
 * https://docs.angularjs.org/api/ng/directive/ngHref
 * http://www.w3schools.com/angular/ng_filter_date.asp
+* Database of airspace fixed: https://nfdc.faa.gov/nfdcApps/services/publicData/lidFixesWaypoints.jsp
