@@ -143,6 +143,18 @@ myApp.factory("Polylines", function(){
 		"CNE1": {
 			latitude: 27.89783055,
 			longitude: -97.13983055
+		},
+		"CNE2": {
+			latitude: 27.84966666,
+			longitude: -97.04483055
+		},
+		"CNE": {
+			latitude: 27.80616111,
+			longitude: -96.99833611
+		},
+		"CSE": {
+			latitude: 27.66599722,
+			longitude: -97.08667222
 		}
 	};
 	
@@ -724,15 +736,9 @@ myApp.factory("Polylines", function(){
 				// Area 1 South Point
 				points.M1SP,
 				// Area 2 South Point
-				{
-					latitude: 27.80616111,
-					longitude: -96.99833611
-				},
+				points.CNE,
 				// Area 2 West Point
-				{
-					latitude: 27.89783056,
-					longitude: -97.139825
-				},
+				points.CNE1,
 				// Area 2 North Point
 				points.M2NP,
 				// Area 1 West Point
@@ -826,10 +832,14 @@ myApp.factory("Polylines", function(){
     	  {
 			id: 21,
 			path: [
-				// Area 3 Southeast Point
+				// Northwest Point
 				points.CNW,
-				// Area 3 Southwest Point
-				points.CNE1	
+				// Mustang 2 West Point
+				points.CNE1,
+				// Mustang 2 South Point
+				points.CNE,
+				// Southeast Point
+				points.CSE
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
