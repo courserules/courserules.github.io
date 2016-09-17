@@ -135,6 +135,14 @@ myApp.factory("Polylines", function(){
 		"M3SW": {
 			latitude: 27.43916667,
 			longitude: -97.37017222
+		},
+		"CNW": {
+			latitude: 27.9213333,
+			longitude: -97.24016666
+		},
+		"CNE1": {
+			latitude: 27.89783055,
+			longitude: -97.13983055
 		}
 	};
 	
@@ -804,6 +812,24 @@ myApp.factory("Polylines", function(){
 				points.M3SE,
 				// Area 3 Southwest Point
 				points.M3SW	
+			],
+			stroke: stroke.kingsFourMoa,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        },
+        // Mustang Central
+    	  {
+			id: 21,
+			path: [
+				// Area 3 Southeast Point
+				points.CNW,
+				// Area 3 Southwest Point
+				points.CNE1	
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
