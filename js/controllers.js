@@ -11,19 +11,7 @@ myApp.config(function(uiGmapGoogleMapApiProvider) {
 	});
 });
 
-// **************************************************************
-// POLYLINES 
-// **************************************************************
-myApp.factory("Polylines", function(){
- 	function playSound(soundfile) {
-  		var audio = document.getElementById("dummy");
-  		audio.innerHTML= 
-  		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
-  		audio.load();
-  		audio.play();
-	};
- 	
- 	var points = {
+var points = {
  		"abeamHighBridge": {
  			latitude: 27.6479,
 			longitude: -97.2321
@@ -164,29 +152,98 @@ myApp.factory("Polylines", function(){
 			latitude: 27.676333333,
 			longitude: -97.16532777
 		}
+};
+
+var stroke = {
+		kingsFour: {
+			color: '#34A5BA',
+			weight: 2,
+			opacity: 0
+		},
+		kingsFourMoa: {
+			color: '#000000',
+			weight: 2
+		},
+		mustang: {
+			color: '#37D35A',
+			weight: 2,
+			opacity: 0
+		},
+		foxtrot: {
+			color: '#FF9F43',
+			weight: 2,
+			opacity: 0
+		} 
+};
+
+var fills = {
+	central: {
+		Color: '#FF0000',
+    	Opacity: 0.35
+	}
+};
+
+// **************************************************************
+// POLYGONS
+// **************************************************************
+myApp.factory("Polygons", function(points, stroke, fills){
+ 	function playSound(soundfile) {
+  		var audio = document.getElementById("dummy");
+  		audio.innerHTML= 
+  		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
+  		audio.load();
+  		audio.play();
 	};
 	
-	var stroke = {
-			kingsFour: {
-				color: '#34A5BA',
-				weight: 2,
-				opacity: 0
-			},
-			kingsFourMoa: {
-				color: '#000000',
-				weight: 2
-			},
-			mustang: {
-				color: '#37D35A',
-				weight: 2,
-				opacity: 0
-			},
-			foxtrot: {
-				color: '#FF9F43',
-				weight: 2,
-				opacity: 0
-			} 
-		};
+	var Polygons = [
+        // Mustang Central
+    	  {
+			id: 1,
+			path: [
+				// Southwest Point
+				points.CSW,
+				// Northwest Point
+				points.CNW,
+				// Mustang 2 West Point
+				points.CNE1,
+				// Mustang 2 South Point
+				points.CNE,
+				// Southeast Point
+				points.CSE,
+				// Fish Pass
+				points.FSHPS,
+				// Southwest Point
+				points.CSW
+				
+			],
+			stroke: stroke.kingsFourMoa,
+			fill: fills.central,
+			editable: false,
+			draggable: false,
+			geodesic: false,
+			visible: true,
+			icons: [{
+				icon: {}
+					}]
+        }
+
+	];
+
+  return Polygons
+});
+
+
+// **************************************************************
+// POLYLINES 
+// **************************************************************
+myApp.factory("Polylines", function(points, stroke){
+ 	function playSound(soundfile) {
+  		var audio = document.getElementById("dummy");
+  		audio.innerHTML= 
+  		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
+  		audio.load();
+  		audio.play();
+	};
 
 	var icons = { 
 			"dashed": [{
@@ -835,35 +892,6 @@ myApp.factory("Polylines", function(){
 			icons: [{
 				icon: {}
 					}]
-        },
-        // Mustang Central
-    	  {
-			id: 21,
-			path: [
-				// Southwest Point
-				points.CSW,
-				// Northwest Point
-				points.CNW,
-				// Mustang 2 West Point
-				points.CNE1,
-				// Mustang 2 South Point
-				points.CNE,
-				// Southeast Point
-				points.CSE,
-				// Fish Pass
-				points.FSHPS,
-				// Southwest Point
-				points.CSW
-				
-			],
-			stroke: stroke.kingsFourMoa,
-			editable: false,
-			draggable: false,
-			geodesic: false,
-			visible: true,
-			icons: [{
-				icon: {}
-					}]
         }
 
 	];
@@ -1185,7 +1213,7 @@ myApp.factory("Options", function(){
 // **************************************************************
 // CONTROLLER 
 // **************************************************************
-myApp.controller("gMap",function($scope, Markers, Polylines, Options){
+myApp.controller("gMap",function($scope, Markers, Polygons, Polylines, Options){
   // Add map to scope
   $scope.map = { 
     center: { latitude: 27.6932, longitude: -97.2805 }, 
