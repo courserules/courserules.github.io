@@ -854,6 +854,7 @@ myApp.factory("Polylines", function(){
 				points.FSHPS,
 				// Southwest Point
 				points.CSW
+				
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
