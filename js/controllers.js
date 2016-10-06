@@ -186,51 +186,51 @@ var fills = {
 // **************************************************************
 // POLYGONS
 // **************************************************************
-myApp.factory("Polygons", function(points, stroke, fills){
- 	function playSound(soundfile) {
-  		var audio = document.getElementById("dummy");
-  		audio.innerHTML= 
-  		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
-  		audio.load();
-  		audio.play();
-	};
-	
-	var Polygons = [
-        // Mustang Central
-    	  {
-			id: 1,
-			path: [
-				// Southwest Point
-				points.CSW,
-				// Northwest Point
-				points.CNW,
-				// Mustang 2 West Point
-				points.CNE1,
-				// Mustang 2 South Point
-				points.CNE,
-				// Southeast Point
-				points.CSE,
-				// Fish Pass
-				points.FSHPS,
-				// Southwest Point
-				points.CSW
-				
-			],
-			stroke: stroke.kingsFourMoa,
-			fill: fills.central,
-			editable: false,
-			draggable: false,
-			geodesic: false,
-			visible: true,
-			icons: [{
-				icon: {}
-					}]
-        }
-
-	];
-
-  return Polygons
-});
+// myApp.factory("Polygons", function(points, stroke, fills){
+//  	function playSound(soundfile) {
+//   		var audio = document.getElementById("dummy");
+//   		audio.innerHTML= 
+//   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
+//   		audio.load();
+//   		audio.play();
+// 	};
+// 	
+// 	var Polygons = [
+//         // Mustang Central
+//     	  {
+// 			id: 1,
+// 			path: [
+// 				// Southwest Point
+// 				points.CSW,
+// 				// Northwest Point
+// 				points.CNW,
+// 				// Mustang 2 West Point
+// 				points.CNE1,
+// 				// Mustang 2 South Point
+// 				points.CNE,
+// 				// Southeast Point
+// 				points.CSE,
+// 				// Fish Pass
+// 				points.FSHPS,
+// 				// Southwest Point
+// 				points.CSW
+// 				
+// 			],
+// 			stroke: stroke.kingsFourMoa,
+// 			fill: fills.central,
+// 			editable: false,
+// 			draggable: false,
+// 			geodesic: false,
+// 			visible: true,
+// 			icons: [{
+// 				icon: {}
+// 					}]
+//         }
+// 
+// 	];
+// 
+//   return Polygons
+// });
 
 
 // **************************************************************
@@ -1213,7 +1213,7 @@ myApp.factory("Options", function(){
 // **************************************************************
 // CONTROLLER 
 // **************************************************************
-myApp.controller("gMap",function($scope, Markers, Polygons, Polylines, Options){
+myApp.controller("gMap",function($scope, Markers, Polylines, Options){
   // Add map to scope
   $scope.map = { 
     center: { latitude: 27.6932, longitude: -97.2805 }, 
@@ -1226,7 +1226,7 @@ myApp.controller("gMap",function($scope, Markers, Polygons, Polylines, Options){
   // Add polylines to scope
   $scope.polylines = Polylines;
   // Add polygons to scope
-  $scope.polygons = Polygons;
+  //$scope.polygons = Polygons;
 });
 
 myApp.controller('date', function($scope) {
