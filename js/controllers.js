@@ -159,6 +159,10 @@ myApp.factory("Polylines", function(){
 		"CSW": {
 			latitude: 27.7356666,
 			longitude: -97.3623444
+		},
+		"FSHPS": {
+			latitude: 27.676333333,
+			longitude: -97.16532777
 		}
 	};
 	
@@ -845,7 +849,8 @@ myApp.factory("Polylines", function(){
 				// Mustang 2 South Point
 				points.CNE,
 				// Southeast Point
-				points.CSE
+				points.CSE,
+				points.FSHPS
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
