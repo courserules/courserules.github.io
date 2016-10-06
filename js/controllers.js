@@ -240,7 +240,7 @@ myApp.factory("Polygons", function(points, stroke, fills){
 					}]
         },
         events: {
-        	hover: function (p, eventName, args) {
+        	mouseover: function (p, eventName, args) {
 				fill: {
 					Color: '#FF0000',
 					Opacity: 0.5
