@@ -843,7 +843,7 @@ myApp.factory("Polylines", function(){
 				// Mustang 2 South Point
 				points.CNE,
 				// Southeast Point
-				points.CSE
+				points.CSE,
 				// Southwest Point
 				points.CSW
 			],
