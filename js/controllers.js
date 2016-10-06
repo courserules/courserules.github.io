@@ -154,7 +154,7 @@ var points = {
 		}
 };
 
-myApp.factory("Stroke", function(){
+myApp.factory("stroke", function(){
 var stroke = {
 		kingsFour: {
 			color: '#34A5BA',
@@ -240,7 +240,7 @@ var fills = {
 // **************************************************************
 // POLYLINES 
 // **************************************************************
-myApp.factory("Polylines", function(Stroke){
+myApp.factory("Polylines", function(stroke){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
@@ -248,6 +248,7 @@ myApp.factory("Polylines", function(Stroke){
   		audio.load();
   		audio.play();
 	};
+	
 	
 	var points = {
  		"abeamHighBridge": {
