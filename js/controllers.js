@@ -155,6 +155,10 @@ myApp.factory("Polylines", function(){
 		"CSE": {
 			latitude: 27.66599722,
 			longitude: -97.08667222
+		},	
+		"CSW": {
+			latitude: 27.7356666,
+			longitude: -97.3623444
 		}
 	};
 	
