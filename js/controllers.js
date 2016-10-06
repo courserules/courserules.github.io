@@ -154,6 +154,7 @@ var points = {
 		}
 };
 
+myApp.factory("Stroke", function(){
 var stroke = {
 		kingsFour: {
 			color: '#34A5BA',
@@ -175,6 +176,9 @@ var stroke = {
 			opacity: 0
 		} 
 };
+
+return stroke;
+});
 
 var fills = {
 	central: {
@@ -236,7 +240,7 @@ var fills = {
 // **************************************************************
 // POLYLINES 
 // **************************************************************
-myApp.factory("Polylines", function(stroke){
+myApp.factory("Polylines", function(Stroke){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
@@ -1039,7 +1043,7 @@ myApp.factory("Polylines", function(stroke){
 
 	];
 
-  return Polylines
+  return Polylines;
 });
 
 // **************************************************************
