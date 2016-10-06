@@ -1225,6 +1225,8 @@ myApp.controller("gMap",function($scope, Markers, Polygons, Polylines, Options){
   $scope.markers = Markers;
   // Add polylines to scope
   $scope.polylines = Polylines;
+  // Add polygons to scope
+  $scope.polygons = Polygons;
 });
 
 myApp.controller('date', function($scope) {
