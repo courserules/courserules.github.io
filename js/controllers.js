@@ -238,7 +238,15 @@ myApp.factory("Polygons", function(points, stroke, fills){
 			icons: [{
 				icon: {}
 					}]
-        }
+        },
+        events: {
+        	hover: function (p, eventName, args) {
+				fill: {
+					Color: '#FF0000',
+					Opacity: 0.5
+				}
+			 }
+      	}
 
 	];
 
