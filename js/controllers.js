@@ -850,7 +850,10 @@ myApp.factory("Polylines", function(){
 				points.CNE,
 				// Southeast Point
 				points.CSE,
-				points.FSHPS
+				// Fish Pass
+				points.FSHPS,
+				// Southwest Point
+				points.CSW
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
