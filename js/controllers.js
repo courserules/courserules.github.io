@@ -240,10 +240,7 @@ myApp.factory("Polygons", function(points, stroke, fills){
 					}]
         },
         events: {
-        	mouseover: function(p, eventName, polyModel, latLngArgs) {
-          fill.opacity = '0.5';
-          console.log(polyModel);
-        	}
+
         }
 
 	];
