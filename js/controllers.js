@@ -836,6 +836,8 @@ myApp.factory("Polylines", function(){
     	  {
 			id: 21,
 			path: [
+				// Southwest Point
+				points.CSW,
 				// Northwest Point
 				points.CNW,
 				// Mustang 2 West Point
@@ -843,9 +845,7 @@ myApp.factory("Polylines", function(){
 				// Mustang 2 South Point
 				points.CNE,
 				// Southeast Point
-				points.CSE,
-				// Southwest Point
-				points.CSW
+				points.CSE
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
