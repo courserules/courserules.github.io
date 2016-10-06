@@ -236,7 +236,7 @@ var fills = {
 // **************************************************************
 // POLYLINES 
 // **************************************************************
-myApp.factory("Polylines", function(points, stroke){
+myApp.factory("Polylines", function(){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
