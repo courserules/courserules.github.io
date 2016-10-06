@@ -244,7 +244,10 @@ myApp.factory("Polylines", function(points, stroke){
   		audio.load();
   		audio.play();
 	};
-
+	
+	var points = points;
+	var stroke = stroke;
+	
 	var icons = { 
 			"dashed": [{
 				icon: {
