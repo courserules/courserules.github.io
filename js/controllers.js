@@ -236,7 +236,7 @@ var fills = {
 // **************************************************************
 // POLYLINES 
 // **************************************************************
-myApp.factory("Polylines", function(storke){
+myApp.factory("Polylines", function(stroke){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
