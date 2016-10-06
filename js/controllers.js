@@ -844,6 +844,8 @@ myApp.factory("Polylines", function(){
 				points.CNE,
 				// Southeast Point
 				points.CSE
+				// Southwest Point
+				points.CSW
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
