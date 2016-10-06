@@ -238,9 +238,6 @@ myApp.factory("Polygons", function(points, stroke, fills){
 			icons: [{
 				icon: {}
 					}]
-        },
-        events: {
-
         }
 
 	];
