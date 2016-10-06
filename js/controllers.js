@@ -236,7 +236,7 @@ var fills = {
 // **************************************************************
 // POLYLINES 
 // **************************************************************
-myApp.factory("Polylines", function(){
+myApp.factory("Polylines", function(storke){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
@@ -386,28 +386,6 @@ myApp.factory("Polylines", function(){
 			latitude: 27.676333333,
 			longitude: -97.16532777
 		}
-	};
-
-	var stroke = {
-		kingsFour: {
-			color: '#34A5BA',
-			weight: 2,
-			opacity: 0
-		},
-		kingsFourMoa: {
-			color: '#000000',
-			weight: 2
-		},
-		mustang: {
-			color: '#37D35A',
-			weight: 2,
-			opacity: 0
-		},
-		foxtrot: {
-			color: '#FF9F43',
-			weight: 2,
-			opacity: 0
-		} 
 	};
 	
 	var icons = { 
