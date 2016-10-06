@@ -11,181 +11,190 @@ myApp.config(function(uiGmapGoogleMapApiProvider) {
 	});
 });
 
-var points = {
- 		"abeamHighBridge": {
- 			latitude: 27.6479,
-			longitude: -97.2321
- 		},
- 		"aluminumPlant": {
-			latitude: 27.8794,
-			longitude: -97.2578
-		},
- 		"abeamBayside": {
- 			latitude: 28.0937,
-			longitude: -97.2578
- 		},
- 		"yIntersection": {
- 			latitude: 28.6648,
-			longitude: -97.4172
-		},
- 		"bridge": {
- 			latitude: 28.7354,
-			longitude: -97.6434
-		},
-		"berclair": {
-			latitude: 28.5439,
-			longitude: -97.5738
-		},
-		"beachline": {
-			latitude: 27.6344,
-			longitude: -97.1809
-		},
-		"A1NP": {
-			latitude: 29.07861111,
-			longitude: -97.49833333 
-		},
-		"A1EP": {
-			latitude: 28.94499722,
-			longitude: -97.27638056
-		},
-		"A2EP": {
-			latitude: 28.81416667,
-			longitude: -97.06
-		},
-		"A1WP": {
-			latitude: 28.90666667,
-			longitude: -97.65860556
-		},
-		"A2WP": {
-			latitude: 28.76416666,
-			longitude: -97.4508333
-		},
-		"A3WP": {
-			latitude: 28.6205,
-			longitude: -97.24133333
-		},
-		"A3SP": {
-			latitude: 28.48138889,
-			longitude: -97.03221389
-		},
-		"A4WP": {
-			latitude: 28.76,
-			longitude: -97.88333889
-		},
-		"A5WP": {
-			latitude: 28.59611111,
-			longitude: -97.66361111
-		},
-		"A6WP": {
-			latitude: 28.43444444,
-			longitude: -97.44305
-		},
-		"A6SP": {
-			latitude: 28.26444444,
-			longitude: -97.21805833
-		},
-		"A8WP": {
-			latitude: 28.45222222,
-			longitude: -97.97
-		},
-		"A9WP": {
-			latitude: 28.27694167,
-			longitude: -97.76193889
-		},
-		"FA1SP": {
-			latitude: 28.20183056,
-			longitude: -96.56483056
-		},
-		"FA1WP": {
-			latitude: 28.32899722,
-			longitude: -96.68900556
-		},
-		"M1WP": {
-			latitude: 28.12966389,
-			longitude: -96.97883056
-		},
-		"M1SP": {
-			latitude: 27.93166944,
-			longitude: -96.87766944
-		},
-		"M2NP": {
-			latitude: 28.036834,
-			longitude: -97.0364
-		},
-		"M3NW": {
-			latitude: 27.608,
-			longitude: -97.29815556
-		},
-		"M3SE": {
-			latitude: 27.40483056,
-			longitude: -97.22016667
-		},
-		"M3SW": {
-			latitude: 27.43916667,
-			longitude: -97.37017222
-		},
-		"CNW": {
-			latitude: 27.9213333,
-			longitude: -97.24016666
-		},
-		"CNE1": {
-			latitude: 27.89783055,
-			longitude: -97.13983055
-		},
-		"CNE2": {
-			latitude: 27.84966666,
-			longitude: -97.04483055
-		},
-		"CNE": {
-			latitude: 27.80616111,
-			longitude: -96.99833611
-		},
-		"CSE": {
-			latitude: 27.66599722,
-			longitude: -97.08667222
-		},	
-		"CSW": {
-			latitude: 27.7356666,
-			longitude: -97.3623444
-		},
-		"FSHPS": {
-			latitude: 27.676333333,
-			longitude: -97.16532777
-		}
-};
-
-myApp.factory("stroke", function(){
-var stroke = {
-		kingsFour: {
-			color: '#34A5BA',
-			weight: 2,
-			opacity: 0
-		},
-		kingsFourMoa: {
-			color: '#000000',
-			weight: 2
-		},
-		mustang: {
-			color: '#37D35A',
-			weight: 2,
-			opacity: 0
-		},
-		foxtrot: {
-			color: '#FF9F43',
-			weight: 2,
-			opacity: 0
-		} 
-};
-
-return stroke;
+// Points
+myApp.factory("points", function(){
+	var points = {
+			"abeamHighBridge": {
+				latitude: 27.6479,
+				longitude: -97.2321
+			},
+			"aluminumPlant": {
+				latitude: 27.8794,
+				longitude: -97.2578
+			},
+			"abeamBayside": {
+				latitude: 28.0937,
+				longitude: -97.2578
+			},
+			"yIntersection": {
+				latitude: 28.6648,
+				longitude: -97.4172
+			},
+			"bridge": {
+				latitude: 28.7354,
+				longitude: -97.6434
+			},
+			"berclair": {
+				latitude: 28.5439,
+				longitude: -97.5738
+			},
+			"beachline": {
+				latitude: 27.6344,
+				longitude: -97.1809
+			},
+			"A1NP": {
+				latitude: 29.07861111,
+				longitude: -97.49833333 
+			},
+			"A1EP": {
+				latitude: 28.94499722,
+				longitude: -97.27638056
+			},
+			"A2EP": {
+				latitude: 28.81416667,
+				longitude: -97.06
+			},
+			"A1WP": {
+				latitude: 28.90666667,
+				longitude: -97.65860556
+			},
+			"A2WP": {
+				latitude: 28.76416666,
+				longitude: -97.4508333
+			},
+			"A3WP": {
+				latitude: 28.6205,
+				longitude: -97.24133333
+			},
+			"A3SP": {
+				latitude: 28.48138889,
+				longitude: -97.03221389
+			},
+			"A4WP": {
+				latitude: 28.76,
+				longitude: -97.88333889
+			},
+			"A5WP": {
+				latitude: 28.59611111,
+				longitude: -97.66361111
+			},
+			"A6WP": {
+				latitude: 28.43444444,
+				longitude: -97.44305
+			},
+			"A6SP": {
+				latitude: 28.26444444,
+				longitude: -97.21805833
+			},
+			"A8WP": {
+				latitude: 28.45222222,
+				longitude: -97.97
+			},
+			"A9WP": {
+				latitude: 28.27694167,
+				longitude: -97.76193889
+			},
+			"FA1SP": {
+				latitude: 28.20183056,
+				longitude: -96.56483056
+			},
+			"FA1WP": {
+				latitude: 28.32899722,
+				longitude: -96.68900556
+			},
+			"M1WP": {
+				latitude: 28.12966389,
+				longitude: -96.97883056
+			},
+			"M1SP": {
+				latitude: 27.93166944,
+				longitude: -96.87766944
+			},
+			"M2NP": {
+				latitude: 28.036834,
+				longitude: -97.0364
+			},
+			"M3NW": {
+				latitude: 27.608,
+				longitude: -97.29815556
+			},
+			"M3SE": {
+				latitude: 27.40483056,
+				longitude: -97.22016667
+			},
+			"M3SW": {
+				latitude: 27.43916667,
+				longitude: -97.37017222
+			},
+			"CNW": {
+				latitude: 27.9213333,
+				longitude: -97.24016666
+			},
+			"CNE1": {
+				latitude: 27.89783055,
+				longitude: -97.13983055
+			},
+			"CNE2": {
+				latitude: 27.84966666,
+				longitude: -97.04483055
+			},
+			"CNE": {
+				latitude: 27.80616111,
+				longitude: -96.99833611
+			},
+			"CSE": {
+				latitude: 27.66599722,
+				longitude: -97.08667222
+			},	
+			"CSW": {
+				latitude: 27.7356666,
+				longitude: -97.3623444
+			},
+			"FSHPS": {
+				latitude: 27.676333333,
+				longitude: -97.16532777
+			}
+	};
+	return points;
 });
 
-var fills = {
-	central: {
-		Color: '#FF0000',
-    	Opacity: 0.35
-	}
-};
+// Strokes
+myApp.factory("stroke", function(){
+	var stroke = {
+			kingsFour: {
+				color: '#34A5BA',
+				weight: 2,
+				opacity: 0
+			},
+			kingsFourMoa: {
+				color: '#000000',
+				weight: 2
+			},
+			mustang: {
+				color: '#37D35A',
+				weight: 2,
+				opacity: 0
+			},
+			foxtrot: {
+				color: '#FF9F43',
+				weight: 2,
+				opacity: 0
+			} 
+	};
+
+	return stroke;
+});
+
+// Fills
+myApp.factory("fills", function(){
+	var fills = {
+		central: {
+			Color: '#FF0000',
+			Opacity: 0.35
+		}
+	};
+	return fills;
+});
 
 // **************************************************************
 // POLYGONS
@@ -240,157 +249,13 @@ var fills = {
 // **************************************************************
 // POLYLINES 
 // **************************************************************
-myApp.factory("Polylines", function(stroke){
+myApp.factory("Polylines", function(stroke, points){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
   		audio.innerHTML= 
   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
   		audio.load();
   		audio.play();
-	};
-	
-	
-	var points = {
- 		"abeamHighBridge": {
- 			latitude: 27.6479,
-			longitude: -97.2321
- 		},
- 		"aluminumPlant": {
-			latitude: 27.8794,
-			longitude: -97.2578
-		},
- 		"abeamBayside": {
- 			latitude: 28.0937,
-			longitude: -97.2578
- 		},
- 		"yIntersection": {
- 			latitude: 28.6648,
-			longitude: -97.4172
-		},
- 		"bridge": {
- 			latitude: 28.7354,
-			longitude: -97.6434
-		},
-		"berclair": {
-			latitude: 28.5439,
-			longitude: -97.5738
-		},
-		"beachline": {
-			latitude: 27.6344,
-			longitude: -97.1809
-		},
-		"A1NP": {
-			latitude: 29.07861111,
-			longitude: -97.49833333 
-		},
-		"A1EP": {
-			latitude: 28.94499722,
-			longitude: -97.27638056
-		},
-		"A2EP": {
-			latitude: 28.81416667,
-			longitude: -97.06
-		},
-		"A1WP": {
-			latitude: 28.90666667,
-			longitude: -97.65860556
-		},
-		"A2WP": {
-			latitude: 28.76416666,
-			longitude: -97.4508333
-		},
-		"A3WP": {
-			latitude: 28.6205,
-			longitude: -97.24133333
-		},
-		"A3SP": {
-			latitude: 28.48138889,
-			longitude: -97.03221389
-		},
-		"A4WP": {
-			latitude: 28.76,
-			longitude: -97.88333889
-		},
-		"A5WP": {
-			latitude: 28.59611111,
-			longitude: -97.66361111
-		},
-		"A6WP": {
-			latitude: 28.43444444,
-			longitude: -97.44305
-		},
-		"A6SP": {
-			latitude: 28.26444444,
-			longitude: -97.21805833
-		},
-		"A8WP": {
-			latitude: 28.45222222,
-			longitude: -97.97
-		},
-		"A9WP": {
-			latitude: 28.27694167,
-			longitude: -97.76193889
-		},
-		"FA1SP": {
-			latitude: 28.20183056,
-			longitude: -96.56483056
-		},
-		"FA1WP": {
-			latitude: 28.32899722,
-			longitude: -96.68900556
-		},
-		"M1WP": {
-			latitude: 28.12966389,
-			longitude: -96.97883056
-		},
-		"M1SP": {
-			latitude: 27.93166944,
-			longitude: -96.87766944
-		},
-		"M2NP": {
-			latitude: 28.036834,
-			longitude: -97.0364
-		},
-		"M3NW": {
-			latitude: 27.608,
-			longitude: -97.29815556
-		},
-		"M3SE": {
-			latitude: 27.40483056,
-			longitude: -97.22016667
-		},
-		"M3SW": {
-			latitude: 27.43916667,
-			longitude: -97.37017222
-		},
-		"CNW": {
-			latitude: 27.9213333,
-			longitude: -97.24016666
-		},
-		"CNE1": {
-			latitude: 27.89783055,
-			longitude: -97.13983055
-		},
-		"CNE2": {
-			latitude: 27.84966666,
-			longitude: -97.04483055
-		},
-		"CNE": {
-			latitude: 27.80616111,
-			longitude: -96.99833611
-		},
-		"CSE": {
-			latitude: 27.66599722,
-			longitude: -97.08667222
-		},	
-		"CSW": {
-			latitude: 27.7356666,
-			longitude: -97.3623444
-		},
-		"FSHPS": {
-			latitude: 27.676333333,
-			longitude: -97.16532777
-		}
 	};
 	
 	var icons = { 
