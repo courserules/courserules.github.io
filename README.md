@@ -19,3 +19,5 @@ Notes on development:
 * http://www.w3schools.com/angular/ng_filter_date.asp
 * Database of airspace fixed: https://nfdc.faa.gov/nfdcApps/services/publicData/lidFixesWaypoints.jsp
 * https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dtpp/search/
+* http://www.faa.gov/documentlibrary/media/order/cnt.pdf
+* BUNO lookup: http://users.rcn.com/jeremy.k/serialSearch.html
