@@ -23,3 +23,4 @@ Notes on development:
 * BUNO lookup: http://users.rcn.com/jeremy.k/serialSearch.html
 * Force Github to rebuild pages: https://stackoverflow.com/questions/24098792/how-to-force-github-pages-build
 * Google Maps Platform API: https://developers.google.com/maps/documentation/javascript/get-api-key
+* https://stackoverflow.com/questions/29284580/how-do-you-activate-google-maps-javascript-api-v3-service
