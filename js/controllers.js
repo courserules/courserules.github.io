@@ -5,7 +5,7 @@ var myApp = angular.module('myApp', ['uiGmapgoogle-maps'],function($interpolateP
 
 myApp.config(function(uiGmapGoogleMapApiProvider) {
 	uiGmapGoogleMapApiProvider.configure({
-		key: '',
+		key: 'AIzaSyDDNSetFsbahwaz5UfCG4I_Jr-SG-q9834',
 		v: '3',
 		libraries: 'weather,geometry,visualization'
 	});
@@ -44,7 +44,7 @@ myApp.factory("points", function(){
 			},
 			"A1NP": {
 				latitude: 29.07861111,
-				longitude: -97.49833333 
+				longitude: -97.49833333
 			},
 			"A1EP": {
 				latitude: 28.94499722,
@@ -145,7 +145,7 @@ myApp.factory("points", function(){
 			"CSE": {
 				latitude: 27.66599722,
 				longitude: -97.08667222
-			},	
+			},
 			"CSW": {
 				latitude: 27.7356666,
 				longitude: -97.3623444
@@ -179,7 +179,7 @@ myApp.factory("stroke", function(){
 				color: '#FF9F43',
 				weight: 2,
 				opacity: 0
-			} 
+			}
 	};
 
 	return stroke;
@@ -202,12 +202,12 @@ myApp.factory("fills", function(){
 myApp.factory("Polygons", function(points, stroke, fills){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
-  		audio.innerHTML= 
+  		audio.innerHTML=
   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
   		audio.load();
   		audio.play();
 	};
-	
+
 	var Polygons = [
         // Mustang Central
     	  {
@@ -227,7 +227,7 @@ myApp.factory("Polygons", function(points, stroke, fills){
 				points.FSHPS,
 				// Southwest Point
 				points.CSW
-				
+
 			],
 			stroke: stroke.kingsFourMoa,
 			fill: fills.central,
@@ -247,18 +247,18 @@ myApp.factory("Polygons", function(points, stroke, fills){
 
 
 // **************************************************************
-// POLYLINES 
+// POLYLINES
 // **************************************************************
 myApp.factory("Polylines", function(stroke, points){
  	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
-  		audio.innerHTML= 
+  		audio.innerHTML=
   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
   		audio.load();
   		audio.play();
 	};
-	
-	var icons = { 
+
+	var icons = {
 			"dashed": [{
 				icon: {
 					path: 'M 0,-1 0,1',
@@ -295,7 +295,7 @@ myApp.factory("Polylines", function(stroke, points){
 				}
       	}
         },
-        
+
         // Highbridge to Aluminum Plant
         {
 			id: 1,
@@ -316,12 +316,12 @@ myApp.factory("Polylines", function(stroke, points){
 				}
       	}
         },
-        
+
         // Aluminum Plant to Bayside
         {
 			id: 1,
 			path: [
-				points.aluminumPlant, 
+				points.aluminumPlant,
 				points.abeamBayside
 			],
 			stroke: stroke.kingsFour,
@@ -337,11 +337,11 @@ myApp.factory("Polylines", function(stroke, points){
 				}
       	}
         },
-        
+
         // Bayside to the Y
         {
 			id: 1,
-			path: [ 
+			path: [
 				points.abeamBayside,
 				points.yIntersection,
 				points.bridge
@@ -359,7 +359,7 @@ myApp.factory("Polylines", function(stroke, points){
 				}
       	}
         },
-        
+
         // KNGT North Flow
         {
 			id: 2,
@@ -374,7 +374,7 @@ myApp.factory("Polylines", function(stroke, points){
 			visible: true,
 			icons: icons.dashed
         },
-        
+
         // KNGT 11
         {
 			id: 3,
@@ -398,7 +398,7 @@ myApp.factory("Polylines", function(stroke, points){
 			visible: true,
 			icons: icons.dashed
         },
-        
+
         // KNGT 29
         {
 			id: 4,
@@ -421,7 +421,7 @@ myApp.factory("Polylines", function(stroke, points){
 			visible: true,
 			icons: icons.dashed
         },
-        
+
         // KNGT 17
         {
 			id: 5,
@@ -441,7 +441,7 @@ myApp.factory("Polylines", function(stroke, points){
 			visible: true,
 			icons: icons.dashed
         },
-        
+
         // KNGT 35
         {
 			id: 6,
@@ -511,7 +511,7 @@ myApp.factory("Polylines", function(stroke, points){
 					latitude: 27.9946,
 					longitude: -96.9135
 				},
-				
+
 			],
 			stroke: stroke.mustang,
 			editable: false,
@@ -617,7 +617,7 @@ myApp.factory("Polylines", function(stroke, points){
 					longitude: -97.59999444
 				},
 				// Area 1 North Point
-				points.A1NP		
+				points.A1NP
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -759,7 +759,7 @@ myApp.factory("Polylines", function(stroke, points){
 				{
 					latitude: 28.18649722,
 					longitude: -96.87484167
-				} 	
+				}
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -821,7 +821,7 @@ myApp.factory("Polylines", function(stroke, points){
 				points.M2NP,
 				// Area 1 West Point
 				points.M1WP
- 	
+
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -839,7 +839,7 @@ myApp.factory("Polylines", function(stroke, points){
 				// Area 2 North Point
 				points.M2NP,
 				// Area 1 South Point
-				points.M1SP	
+				points.M1SP
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -877,7 +877,7 @@ myApp.factory("Polylines", function(stroke, points){
 				points.M3SW,
 				// Area 3 Northwest Point
 				points.M3NW
- 	
+
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -895,7 +895,7 @@ myApp.factory("Polylines", function(stroke, points){
 				// Area 3 Southeast Point
 				points.M3SE,
 				// Area 3 Southwest Point
-				points.M3SW	
+				points.M3SW
 			],
 			stroke: stroke.kingsFourMoa,
 			editable: false,
@@ -918,11 +918,11 @@ myApp.factory("Polylines", function(stroke, points){
 myApp.factory("Markers", function(){
 	function playSound(soundfile) {
   		var audio = document.getElementById("dummy");
-  		audio.innerHTML= 
+  		audio.innerHTML=
   		"<source src=\""+soundfile+"\"type=\"audio/mpeg\">";
   		audio.play();
 	}
-	
+
 	var Markers = [
 		// High Bridge
 		{
@@ -956,7 +956,7 @@ myApp.factory("Markers", function(){
 });
 
 // **************************************************************
-// OPTIONS 
+// OPTIONS
 // **************************************************************
 myApp.factory("Options", function(){
 	var Options = {
@@ -1224,14 +1224,14 @@ myApp.factory("Options", function(){
 });
 
 // **************************************************************
-// CONTROLLER 
+// CONTROLLER
 // **************************************************************
 myApp.controller("gMap",function($scope, Markers, Polylines, Polygons, Options){
   // Add map to scope
-  $scope.map = { 
-    center: { latitude: 27.6932, longitude: -97.2805 }, 
+  $scope.map = {
+    center: { latitude: 27.6932, longitude: -97.2805 },
     zoom: 10,
-  };  
+  };
   // Add options to scope
   $scope.options = Options;
   // Add markers to scope
